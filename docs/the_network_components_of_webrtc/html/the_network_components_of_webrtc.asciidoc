@@ -1,0 +1,37 @@
+:reporttype:    Research Note TSSG-2012
+:reporttitle:   The Network Components of WebRTC
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         Telecommunications Software and Systems Group (TSSG)
+:address:       Waterford Institute of Technology, West Campus, Carriganore, Waterford, Ireland
+:revdate:       July 03, 2012
+:revnumber:     N/A
+:docdate:       July 03, 2012
+:description:   Network componnts of WebRTC
+:legal:         (C) Waterford Institute of Technology
+:encoding:      iso-8859-1
+:toc:
+
+
+
+== Networking components of WebRTC ==
+
+Dynamic jitter buffers and error concealment techniques are included for audio and video that help mitigate the effects of packet loss and unreliable networks. Also included are components for establishing a Peer to Peer connection using ICE / STUN / Turn / RTP-over-TCP and support for proxies. This technology comes in part from the Libjingle project.http://www.webrtc.org/faq#TOC-Network[WebRTC.org]
+
+=== Libjingle ===
+
+libjingle is a collection of open-source C++ code and sample applications that enables you to build a peer-to-peer application. The code handles creating a network connection (through NAT and firewall devices, relay servers, and proxies), negotiating session details (codecs, formats, etc.), and exchanging data. It also provides helper tasks such as parsing XML, and handling network proxies. 
+
+Features of Libjingle:
+
+* A multi-user voice chat application
+* A multi-user video conferencing application
+* A multi-user live music streaming application
+* A peer-to-peer file sharing application
+
+Libjingle is available on Google Code for both Windows and UNIX/Linux operating systems.The source code is provided as part of our ongoing commitment to promoting consumer choice and interoperability in Internet-based real-time-communications. This code is made available under a Berkeley-style license, which means you are free to incorporate it into commercial and non-commercial software and distribute it.https://developers.google.com/talk/libjingle/[Libjingle project].
+
+=== ICE/STUN/TURN ===
+
+ICE and STUN are standardized methods for establishing a peer-to-peer connection on the internet, even if the two end points are behind private network addresses (NAT). At present Google's current stack deviates from the offical standard.They are working to rectify this. Google will also support TURN servers to allow connections through tougher firewalls, where relaying and encapsulation are needed. Exactly what type of TURN will be supported has yet to be defined.
+ 
