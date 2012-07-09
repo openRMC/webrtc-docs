@@ -1,0 +1,55 @@
+image::tssg_logo.png["TSSG Logo", scaledwidth="15%", scaledheight="15%", align="center"]
+
+[float]
+Google and WebRTC
+-----------------
+
+.Research Group:
+Telecommunications Software and Systems Group (TSSG)
+
+.Address:
+Waterford Institute of Technology, West Campus, Carriganore, Waterford, Ireland
+
+.Author(s):
+Brendan O'Farrell
+
+.Email List:
+bofarrell@tssg.org
+
+.Rev Date:
+July 03, 2012
+
+.Rev Number:
+N/A
+
+.Date:
+July 03, 2012
+
+.Copyright:
+(C) Waterford Institute of Technology
+
+[float]
+Synopsis:
+^^^^^^^^^
+Googles involvment with WebRTC
+
+:reporttype:    Research Note TSSG-2012
+:reporttitle:   Google and WebRTC
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         Telecommunications Software and Systems Group (TSSG)
+:address:       Waterford Institute of Technology, West Campus, Carriganore, Waterford, Ireland
+:revdate:       July 03, 2012
+:revnumber:     N/A
+:docdate:       July 03, 2012
+:description:   Googles involvment with WebRTC
+:legal:         (C) Waterford Institute of Technology
+:encoding:      iso-8859-1
+:toc:
+
+
+== Google and WebRTC ==
+Google have been to the forefront of this project. They want to develop a standard based real time media engine available in all browsers. In order to drive the development of real time communication Google have  realeased nearly $70 million worth of open source code to developers.  This open source audio and video codecs came about through the aquisition by Google of companies such as Global IP solutions and On2 Technologies. 
+
+In early 2010, Google finalized its acquisition of On2, a video codec company that has developed the VP series of codecs, with the latest codec being VP8. On2 has always positioned its codecs as a patent free replacement to the H.26x series of codecs, which were standardized, patented and widely used. It then went about opening On2′s technologies to the world and open sources VP8 under the name of WebM. The idea was to replace H.264 for web videos and by that, reduce patent costs for everyone – especially Google itself.
+Google went on and during 2010 acquired Global IP Solutions (GIPS), a company known for their media frameworks – a piece of technology that makes developing VoIP and video calling applications easier. At the time, GIPS had a large market share in VoIP, which caused most of the industry to scurry and search for alternative solutions. As with On2, Google took GIPS’ assets and open sourced them. This time they threw out all voice and video codecs that had patent owners and added an additional layer – a JavaScript API as an integration layer to web browsers. The idea? Have bidirectional media processing and media coding technologies available in every browser. It then went on to push it as a standard at the IETF and W3C, where such standards are set and approved . This real time communication is now called WebRTC. Google have a Google+ forum page which keeps up with the latest WebRTC developments.https://plus.google.com/113817074606039822053/posts[Google+ WebRTC]

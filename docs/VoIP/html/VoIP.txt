@@ -1,0 +1,126 @@
+image::tssg_logo.png["TSSG Logo", scaledwidth="15%", scaledheight="15%", align="center"]
+
+[float]
+VoIP
+----
+
+.Research Group:
+Telecommunications Software and Systems Group (TSSG)
+
+.Address:
+Waterford Institute of Technology, West Campus, Carriganore, Waterford, Ireland
+
+.Author(s):
+Brendan O'Farrell
+
+.Email List:
+bofarrell@tssg.org
+
+.Rev Date:
+June 14, 2012
+
+.Rev Number:
+N/A
+
+.Date:
+June 14, 2012
+
+.Copyright:
+(C) Waterford Institute of Technology
+
+[float]
+Synopsis:
+^^^^^^^^^
+A brief look at V0IP and the affect WebRTC will have on it.
+
+:reporttype:    Research Note TSSG-2012
+:reporttitle:   VoIP 
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         Telecommunications Software and Systems Group (TSSG)
+:address:       Waterford Institute of Technology, West Campus, Carriganore, Waterford, Ireland
+:revdate:       June 14, 2012
+:revnumber:     N/A
+:docdate:       June 14, 2012
+:description:   A brief look at V0IP and the affect WebRTC will have on it.
+:legal:         (C) Waterford Institute of Technology
+:encoding:      iso-8859-1
+:toc:
+
+
+
+== Introduction ==
+ 
+This document will take a look how VoIP works and how WebRTC will affect in the near future
+ 
+=== VoIP ===
+
+There are three main components to VoIP:
+
+* Network
+* Signaling
+* Media
+
+
+==== Network ====
+
+The network gets the data from one point to the other . It has its own characteristics which then affect what types of signaling and media are used. In the case of the internet, we can generally speak about these characteristics:
+
+* No guaranteed quality of service: data sent might not be received
+* No guaranteed latency: data sent may arrive with different delay characteristics
+* Heterogenic in nature: different parts of the network behave differently (WiFi, LAN, Ethernet, MPLS, LTE, etc)
+* Asymmetric: NAT and firewall devices may restrict reaching certain addresses
+
+==== Signaling ====
+
+Signaling is the addressing part of VoIP.  
+
+Signaling includes:
+
+* Registration and discovery – how do I tell the world how to reach me?
+* Dialing – how do I dial, receive calls, drop them, etc.
+* Capabilities – how do participants in the call understand what each side is capable of?
+* Supplementary services – the usual suspects: hold, mute, transfer, forward, park, conferencing, …
+
+The above must be done in the same “language” between all participants – all should know how to communicate in SIP, H.323, XMPP.  
+
+You can look at signaling for another angle, and that is non-functional features it needs to provide:
+
+* Networking – IPv4, IPv6, UDP, TCP, etc.
+* Security – things like privacy, authentication, etc.
+* Connectivity – ability to connect endpoints no matter where they are. This focuses mainly on NAT traversal issues
+* The non-functional features also fit in with requirements for the media.
+
+==== Media ====
+
+Media is what we’re here for. The moment enough knowledge exist between the participants of the call, media kicks in and starts to flow between the participants to get us our call.
+
+Media is usually thought of as the voice and video codecs along with their transport mechanism.In recent years, media got wrapped by vendors into components called media engines or media frameworks. These took care of the codecs and their transport. As everything else, these vendors tried (and are trying) to move up the food chain, and for them this means adding some signaling features into these media engines. It works great most of the times, as it eases the integration and the development efforts of application vendors.
+
+=== WebRTC and VoIP ===
+
+WebRTC is a media engine that target browsers. It offers a Java Script API that is being standardized, so it will be available to all web developers eventually.
+
+WebRTC also include a bit of signaling into it – the non-functional NAT traversal mechanisms: STUN, TURN and ICE. Luckily, these 3 mechanisms are also the ones defined for NAT traversal use in both SIP and XMPP.http://bloggeek.me/voip-signaling-101/[Bloggeek]
+
+When Google purchased GIPS and open sourced their codes, the VoIP industry had to look for alternatives. GIPS was the largest voice engine company around and almost every VoIP developer had some dealings with them.
+
+With Google having open sourced the codes, it meant there was no real way you as a customer can get an SLA from Google for maintaining and improving the GIPS voice engine. And it is an issue, as a lot of GIPS customers used custom built voice engine packages – ones that are specific to their clients needs.
+
+The VoIP can still continue but it will have to adapt. It will have to include the audio codecs of WebRTC which will be awkward but not to difficult.They can take WebRTC and embed it into their own products – web based or not. Gateways will need to developed to connect the world of WebRTC and that of SIP and PSTN. The two worlds can live together once the industry adapts and evolves.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
