@@ -36,21 +36,21 @@ Here are the set of functions which enable the media engine to deliver and recei
 
 Audio
 
-Setup and control the hardware 
-RTP, compression, encryption, statistics, etc. 
-Produce low-latency audio from microphone 
-Conceal loss, de-jitter and play audio from the network 
-Cancel echo, VAD, reduce noise, etc. 
-Manage codecs 		
+* Setup and control the hardware 
+* RTP, compression, encryption, statistics, etc. 
+* Produce low-latency audio from microphone 
+* Conceal loss, de-jitter and play audio from the network 
+* Cancel echo, VAD, reduce noise, etc. 
+* Manage codecs 		
 
 Video
 
-Render video, capture camera input 
-Video processing (blue screen, gamma, etc.) 
-Conceal loss, de-jitter and play video from the network 
-Cancel echo, VAD, reduce noise, etc. 
-Manage codecs 
-Bandwidth Management 
+* Render video, capture camera input 
+* Video processing (blue screen, gamma, etc.) 
+* Conceal loss, de-jitter and play video from the network 
+* Cancel echo, VAD, reduce noise, etc. 
+* Manage codecs 
+* Bandwidth Management 
 
 
 

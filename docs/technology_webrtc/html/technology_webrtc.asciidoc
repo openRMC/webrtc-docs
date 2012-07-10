@@ -36,21 +36,21 @@ Here are the set of functions which enable the media engine to deliver and recei
 
 Audio
 
-Setup and control the hardware 
-RTP, compression, encryption, statistics, etc. 
-Produce low-latency audio from microphone 
-Conceal loss, de-jitter and play audio from the network 
-Cancel echo, VAD, reduce noise, etc. 
-Manage codecs 		
+* Setup and control the hardware 
+* RTP, compression, encryption, statistics, etc. 
+* Produce low-latency audio from microphone 
+* Conceal loss, de-jitter and play audio from the network 
+* Cancel echo, VAD, reduce noise, etc. 
+* Manage codecs 		
 
 Video
 
-Render video, capture camera input 
-Video processing (blue screen, gamma, etc.) 
-Conceal loss, de-jitter and play video from the network 
-Cancel echo, VAD, reduce noise, etc. 
-Manage codecs 
-Bandwidth Management 
+* Render video, capture camera input 
+* Video processing (blue screen, gamma, etc.) 
+* Conceal loss, de-jitter and play video from the network 
+* Cancel echo, VAD, reduce noise, etc. 
+* Manage codecs 
+* Bandwidth Management 
 
 
 
@@ -72,4 +72,4 @@ The WebRTC Media Engine uses both a set of standard components, including codecs
 CODE  SAMPLES
 http://www.webrtc.org/reference/native-apis [WebRTC native API's]
 http://www.webrtc.org/reference/api-description   [PeerConnection native API’s]
-https://code.google.com/p/libjingle/source/browse/#svn%2Ftrunk%2Ftalk%2Fexamples%2Fpeerconnection%2Fclient [Sample client application
+ 
