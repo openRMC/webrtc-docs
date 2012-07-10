@@ -51,8 +51,11 @@ The IEFT setting the protocol standards.
 
 == IETF (Internet Engineering Task Force) == 
 
-IETF create standards that apply to the internet to improve internet usability.
-The IETF RTCWEB WG was formed in April 2011 and is currently generating RFCs in moving to a standard. The IETF is charged with setting all the protocols and signalling involed in WebRTC. To View all drafts please click on link. http://tools.ietf.org/html/draft-ietf-rtcweb-rtp-usage-01[IETF and WebRTC]
+"The goal of the IETF is to make the Internet work better." http://www.ietf.org/[IETF]
+IETF is made up of working groups and informal discussion groups. When a group has completed their task they are disbanded. Each group has its own charter; this tells them what is required of them and how to proceed. IETF is open to anyone who wishes to participate, aside from meetings; discussions are often held via mailing lists. Entry fees cost $650 per person to attend the meetings. IETF is not open to companies; you join on an individual basis. There is no voting procedure in IETF; it operates on a consensus basis.
+
+The IETF RTCWEB WG was formed in April 2011 and is currently generating RFCs in moving to a standard. The IETF is charged with setting all the protocols and signalling involved in WebRTC. To View all drafts please click on link. http://tools.ietf.org/html/draft-ietf-rtcweb-rtp-usage-01[IETF and WebRTC]
+
 
 
 
