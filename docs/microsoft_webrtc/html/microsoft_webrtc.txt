@@ -49,7 +49,12 @@ Microsofts approach to WebRTC
 
 
 
-== Microsoft and WebRTC ==
-Microsoft Internet Explorer. At the IEFT meeting 83 in Paris Microsoft  indicated interest in supporting WebRTC in their IE browser--most probably in order to support Skype, as Skype are already using the Vp8 video codec which is the chossen standard codec for WebRTC. WebRTC is not expexted in the IE browser until sometime in 2013. 
+== MOZILLA/FIREFOX AND WEBRTC == 
 
-Microsoft's previous job listings noted the need for developers with experience of HTML5 user interfaces and specifically mentioned "Skype for browsers." WebRTC is noteworthy as Google open sourced the framework in early 2011, providing video and voice chat in browsers without the need for additional plugins. The W3C is still drafting the WebRTC HTML5 standard, but Microsoft has started to work on implementing the API. Microsoft is refusing to comment "on future product or technology plans," but the company confirmed to Gigaom that it experiments with "standards based and proprietary technologies."http://www.theverge.com/2012/6/27/3120273/skype-for-browsers-webrtc-job-listing-rumor[The Verge.com]
+Mozilla attended IETF 83 in Paris 2012, and showed a demonstration of a simple video call between two Browser ID-authenticated parties in a prototype build of Firefox with WebRTC support.  
+
+Mozilla have also been experimenting with integrating social features in the browser from their Persona social media product and  combining it with WebRTC to establish a video call between two users who are signed in using Browser   The Social API add-on, once installed, provides a sidebar where web content from the social service provider is rendered.       http://hacks.mozilla.org/2012/04/webrtc-efforts-underway-at-mozilla/ [Mozilla/demo]
+
+In early 2012 Mozilla had stated they were going to adapt the VP8 video code. At present some confusion reigns. Mozilla conscious of the fact that most smart phones and tablets run the H.264 codec, have started looking at using that codec and offering the VP8 codec a separate alternative.
+
+Mozilla are aiming to have real time communication available in Firefox last quarter 2012.
