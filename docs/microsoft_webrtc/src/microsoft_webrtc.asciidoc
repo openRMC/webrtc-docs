@@ -14,12 +14,7 @@
 
 
 
-== MOZILLA/FIREFOX AND WEBRTC == 
+== MICROSOFT AND WEBRTC == 
+At the IEFT meeting 83 in Paris Microsoft indicated interest in supporting WebRTC in their IE browser most probably in order to support Skype, as Skype are already using the VP8 video codec, which looks likely to be the chosen standard video codec for WebRTC. WebRTC was not expected in the IE browser until sometime in 2013. However in June of this year Microsoft posted a job on their website looking for developers to develop WebRTC in Internet Explorer. With this development it now looks as if Microsoft will join the other browser companies in launching WebRTC late 2012.
 
-Mozilla attended IETF 83 in Paris 2012, and showed a demonstration of a simple video call between two Browser ID-authenticated parties in a prototype build of Firefox with WebRTC support.  
-
-Mozilla have also been experimenting with integrating social features in the browser from their Persona social media product and  combining it with WebRTC to establish a video call between two users who are signed in using Browser ID; The Social API add-on, once installed, provides a sidebar where web content from the social service provider is rendered.       http://hacks.mozilla.org/2012/04/webrtc-efforts-underway-at-mozilla/ [Mozilla/demo]
-
-In early 2012 Mozilla had stated they were going to adapt the VP8 video code. At present some confusion reigns. Mozilla conscious of the fact that most smart phones and tablets run the H.264 codec, have started looking at using that codec and offering the VP8 codec a separate alternative.
-
-Mozilla are aiming to have real time communication available in Firefox last quarter 2012.
+http://arstechnica.com/information-technology/2012/06/opera-12-arrives-with-webcam-apis-and-experimental-webgl-support/[Arstechnica.com]  
