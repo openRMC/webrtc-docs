@@ -13,7 +13,7 @@
 :toc:
 
 
-== Google and2222 WebRTC ==
+== Google and WebRTC ==
 Google have been to the forefront of this project. They want to develop a standard based real time media engine available in all browsers. In order to drive the development of real time communication Google have  realeased nearly $70 million worth of open source code to developers.  This open source audio and video codecs came about through the aquisition by Google of companies such as Global IP solutions and On2 Technologies. 
 
 In early 2010, Google finalized its acquisition of On2, a video codec company that has developed the VP series of codecs, with the latest codec being VP8. On2 has always positioned its codecs as a patent free replacement to the H.26x series of codecs, which were standardized, patented and widely used. It then went about opening On2′s technologies to the world and open sources VP8 under the name of WebM. The idea was to replace H.264 for web videos and by that, reduce patent costs for everyone – especially Google itself.
