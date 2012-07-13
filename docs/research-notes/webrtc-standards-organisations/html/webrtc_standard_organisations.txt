@@ -1,0 +1,83 @@
+image::tssg_logo.png["TSSG Logo", scaledwidth="15%", scaledheight="15%", align="center"]
+
+[float]
+THE ORGANISATIONS SETTING THE STANDARDS FOR WEBRTC
+--------------------------------------------------
+
+.Research Group:
+Telecommunications Software and Systems Group (TSSG)
+
+.Address:
+Waterford Institute of Technology, West Campus, Carriganore, Waterford, Ireland
+
+.Author(s):
+Brendan O'Farrell
+
+.Email List:
+bofarrell@tssg.org
+
+.Rev Date:
+June 14, 2012
+
+.Rev Number:
+N/A
+
+.Date:
+June 14, 2012
+
+.Copyright:
+(C) Waterford Institute of Technology
+
+[float]
+Synopsis:
+^^^^^^^^^
+The organisations involved in setting the standards for WebRTC
+
+:reporttype:    Research Note TSSG-2012
+:reporttitle:   THE ORGANISATIONS SETTING THE STANDARDS FOR WEBRTC
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         Telecommunications Software and Systems Group (TSSG)
+:address:       Waterford Institute of Technology, West Campus, Carriganore, Waterford, Ireland
+:revdate:       June 14, 2012
+:revnumber:     N/A
+:docdate:       June 14, 2012
+:description:   The organisations involved in setting the standards for WebRTC
+:legal:         (C) Waterford Institute of Technology
+:encoding:      iso-8859-1
+:toc:
+
+
+
+== THE ORGANISATIONS SETTING THE STANDARDS FOR WEBRTC ==
+
+The organisations which are responsible for the WebRTC standards are IETF which is responsible for protocol and signalling and W3C which will look after the standards for API's for all app developers.  
+
+ 
+=== WEB REAL-TIME COMMUNICATIONS WORKING GROUP CHARTER (2011) ===
+
+"The mission of the Web Real-Time Communications Working Group, part of the Ubiquitous Web Applications Activity, is to define client-side APIs to enable Real-Time Communications in Web browsers.
+These APIs should enable building applications that can be run inside a browser, requiring no extra downloads or plugins, that allow communication between parties using audio, video and supplementary real-time communication, without having to use intervening servers (unless needed for firewall traversal, or for providing intermediary services)
+
+The working groups scope is enabling real-time communications between Web browsers require the following client-side technologies to be available:
+
+API functions to explore device capabilities, e.g. camera, microphone, speakers (currently in scope for the Device APIs & Policy Working Group)
+
+API functions to capture media from local devices (camera and microphone) (currently in scope for the Device APIs & Policy Working Group)
+
+API functions for encoding and other processing of those media streams,
+
+API functions for establishing direct peer-to-peer connections, including firewall/NAT traversal
+
+API functions for decoding and processing (including echo cancelling, stream synchronization and a number of other functions) of those streams at the incoming end,
+
+Delivery to the user of those media streams via local screens and audio output devices (partially covered with HTML5) ". http://www.w3.org/2011/04/webrtc-charter.html [W3C]
+
+=== IETF (Internet Engineering Task Force) === 
+
+"The goal of the IETF is to make the Internet work better." http://www.ietf.org/[IETF]
+IETF is made up of working groups and informal discussion groups. When a group has completed their task they are disbanded. Each group has its own charter; this tells them what is required of them and how to proceed. IETF is open to anyone who wishes to participate, aside from meetings; discussions are often held via mailing lists. Entry fees cost $650 per person to attend the meetings. IETF is not open to companies; you join on an individual basis. There is no voting procedure in IETF; it operates on a consensus basis.
+
+The IETF RTCWEB WG was formed in April 2011 and is currently generating RFCs in moving to a standard. The IETF is charged with setting all the protocols and signalling involved in WebRTC. To View all drafts please click on link. http://tools.ietf.org/html/draft-ietf-rtcweb-rtp-usage-01[IETF and WebRTC]
+
+ 

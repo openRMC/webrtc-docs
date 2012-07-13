@@ -1,0 +1,24 @@
+:reporttype:    Research Note TSSG-2012
+:reporttitle:   IETF and WebRTC
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         Telecommunications Software and Systems Group (TSSG)
+:address:       Waterford Institute of Technology, West Campus, Carriganore, Waterford, Ireland
+:revdate:       July 03, 2012
+:revnumber:     N/A
+:docdate:       July 03, 2012
+:description:   The IEFT setting the protocol standards.
+:legal:         (C) Waterford Institute of Technology
+:encoding:      iso-8859-1
+:toc:
+
+
+
+== IETF (Internet Engineering Task Force) == 
+
+IETF create standards that apply to the internet to improve internet usability.
+The IETF RTCWEB WG was formed in April 2011 and is currently generating RFCs in moving to a standard. The IETF is charged with setting all the protocols and signalling involed in WebRTC. To View all drafts please click on link. http://tools.ietf.org/html/draft-ietf-rtcweb-rtp-usage-01[IETF and WebRTC]
+
+
+
+ 

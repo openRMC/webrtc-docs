@@ -1,0 +1,29 @@
+:reporttype:    Research Note TSSG-2012
+:reporttitle:   WebRTC case studies
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         Telecommunications Software and Systems Group (TSSG)
+:address:       Waterford Institute of Technology, West Campus, Carriganore, Waterford, Ireland
+:revdate:       July 07, 2012
+:revnumber:     N/A
+:docdate:       July 07, 2012
+:description:   A look at some WebRTC case studies
+:legal:         (C) Waterford Institute of Technology
+:encoding:      iso-8859-1
+:toc:
+
+
+
+== WebRTC case studies ==
+
+* Call a friend using a social media API. From the chat/online window you can click on a friend and start a video call with them in the browser.  
+* Video conferencing / sharing files from inside an app. The user calls someone from inside an app and is able to share files through the peer to peer connection as they are talking via the data channel.
+* Games that integrate video, audio and data sharing. A game where you see the video and hear the audio of your opponent and play the game live using WebRTC’s data channels.
+* Apps that can draw down your contacts from say your LinkedIN account, you can instantly have an audio visual meeting without leaving your office.
+* Call centres where you can have a full interactive conversation with sound and video. For example a Sky service call, they can not only talk you through the process, they can watch you do it and give you guidence.
+ 
+To see case studies used by IETF please click on link provided. 
+https://datatracker.ietf.org/doc/draft-ietf-rtcweb-use-cases-and-requirements/?include_text=1[WebRTC caes studies and requirements from IETF]
+
+
+ 

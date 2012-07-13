@@ -1,0 +1,68 @@
+:reporttype:    Research Note TSSG-2012
+:reporttitle:   Glossary
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         Telecommunications Software and Systems Group (TSSG)
+:address:       Waterford Institute of Technology, West Campus, Carriganore, Waterford, Ireland
+:revdate:       June 14, 2012
+:revnumber:     N/A
+:docdate:       June 14, 2012
+:description:   Glossary
+:legal:         (C) Waterford Institute of Technology
+:encoding:      iso-8859-1
+:toc:
+
+
+
+== Introduction ==
+ 
+RTC:			Real time Communication.
+JSEP:			JavaScript session establishment protocol.
+API:			Application programming interface
+ICE:			Interactive connectivity establishment
+STUN:			Simple transversal of UDP through NAT
+NAT:			Network address translator.
+UDP:			User datagram protocol.
+TURN:			Transversal using relays around NAT.
+VP8:			Video codec
+DTLS:			Datagram transport layer security.
+STRP:			Secure real-time transport protocol.
+SIP:			Session initiation protocol.
+SLA:			Service level agreement.
+RTP:			Real-time transport protocol.
+IETF:			Internet engineering task force
+XMPP:			Extensible messaging and presence protocol
+VoIP:			Voice over internet protocol
+W3C:			World Wide Web consortium
+URL:			Uniform resource locator
+HTTP:			Hypertext transfer protocol
+AEC:			Acoustic echo cancellation
+AGC:			Automatic gain control
+iLBC:			Internet low bitrate codec
+iSAC:			Internet speech audio codec
+RFC:			Request for comment
+CELT:			Constrained energy lapped transform
+CBR:			Constant bitrate
+VBR:			Variable bitrate
+PLC:			Packet loss concealment
+HTML:			Hypertext mark-up language
+MPEG:			Moving pictures expert group
+TCP:			Transmission control protocol
+XML:			Extensible mark-up language
+VAD:			Voice activity detection
+OTT:			Over the top
+STC:			Society for technical communications
+DTMF:			Dual tone multi frequency
+ITU:			International telecommunications union
+PSTN:			Public switched telephone network
+GIPS:			Global investments performance standards
+VP:			Video protocol
+PBX:			Private branch exchange
+MPLS:			Multiprotocol label switching
+LTE:			Long term evolution
+LAN:			Local area network
+HD:			High definition
+SDP:			Session description protocol
+
+
+
