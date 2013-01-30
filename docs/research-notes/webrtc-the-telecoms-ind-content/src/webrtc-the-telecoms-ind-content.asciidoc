@@ -1,0 +1,11 @@
+This document will look at VoIP, video conferencing and how they will have adapt and change with the advent of WebRTC. It will also look at the existing audio visual communication companies such as Skype.
+
+include::../../webrtc-voip/src/webrtc-voip.asciidoc[]
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+include::../../webrtc-skype/src/webrtc-skype.asciidoc[]
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+include::../../webrtc-disruptive-technology-for-communications-ind-content/src/webrtc-disruptive-technology-for-communications-ind-content.asciidoc[]
