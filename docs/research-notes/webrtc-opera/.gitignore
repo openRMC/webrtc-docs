@@ -1,5 +1,7 @@
 build.properties
 
-html/
+pdf
 
-pdf/
+html
+
+*~

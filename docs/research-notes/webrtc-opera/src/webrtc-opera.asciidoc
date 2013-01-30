@@ -1,0 +1,5 @@
+=== Opera ===
+
+Opera released its new version of its web browser Opera 12 on June 14 last. The new version includes preliminary support for WebRTC. WebRTC will eventually enable standards-based audio and video chat in Web applications. There is also support for the WebRTC media capture APIs, which allow Web content to capture live media streams from the user's microphone and web cam.  
+
+The WebRTC getUserMedia API works out of the box in Opera 12 and can be used by any website. Due to the potential privacy and security implications, the user is automatically prompted by the browser before the feature is allowed to be activated.http://arstechnica.com/information-technology/2012/06/opera-12-arrives-with-webcam-apis-and-experimental-webgl-support/[Arstechnica.com] 
