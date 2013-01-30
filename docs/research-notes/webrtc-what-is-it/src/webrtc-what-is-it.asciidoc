@@ -1,0 +1,45 @@
+:reporttype:    Research Note TSSG-2012
+:reporttitle:   What is WebRTC
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         Telecommunications Software and Systems Group (TSSG)
+:address:       Waterford Institute of Technology, West Campus, Carriganore, Waterford, Ireland
+:revdate:       July 20, 2012
+:revnumber:     N/A
+:docdate:       June 14, 2012
+:description:   A description of WebRTC.
+:legal:         (C) Waterford Institute of Technology
+:encoding:      iso-8859-1
+:toc:
+
+
+
+ 
+ 
+
+"WebRTC is a free, open project that enables web browsers with Real-Time Communications (RTC) capabilities via simple Java script APIs. The WebRTC components have been optimized to best serve this purpose."
+http://webrtc.org[WebRTC]
+
+WebRTC allows real time peer to peer audio visual communication via a HTML5 compliant browser. Not all browsers have WebRTC  capability at present. At this time of writing both Google Chrome and Opera 12 have it available to test, Firefox 18 will have it  1st quater 2013 with Internet Explorer following with their version CU-RTC-WEB in early 2013. There are no plugins required for WebRTC to work and  no expensive pieces of hardware either. Just a WebRTC enabled browser, a camera (which is often quite standard on all new laptops), a mic/headset or mic/speakers and you real time communication available to you.
+
+Having WebRTC integrated in a HTML5 enabled browser means you can now make real time audio video calls to any other WebRTC enabled device including such devices as  tablets, smart phones, e-readers etc. The quality of these calls are only limited by the quality of the hardware, the audio and video codecs  are open sourced and of a very high quality giving the client an excellent audio visual experience. 
+
+With IETF having set the standard for protocol and signalling, and W3C having set the standard for the APIs for app developers, this means millions of Java Script developers can now deliver and define web based communication. No longer will it be the domain of the small number of SIP developers and VOIP system resellers. 
+
+WebRTC has the potential for real change in how we communicate, much the same way the browser did for information. The effect can be that big. What we need is that all invested parties comply with the standards laid down by W3C and IETF whether this comes to bear only time will tell. 
+
+=== WebRTC Demonstration examples ===
+
+http://neave.com/webcam/html5/[neave.com]
+
+https://apprtc.appspot.com[WebRTC.org]
+
+http://html5videoguide.net/presentations/WebDirCode2012/#page9[Silvia Pfeiffer demo]
+
+http://www.shinydemos.com/facekat/[Opera head tracking demo]
+
+http://www.chromeexperiments.com/detail/web-lab/[Google chrome web labs]
+
+http://phono.com/webrtc[Phono.com]
+
+http://www.sipml5.org/[Dubango telecom]
