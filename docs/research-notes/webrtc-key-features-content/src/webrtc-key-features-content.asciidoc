@@ -1,0 +1,149 @@
+=== The 3 key features of WebRTC ===
+
+* Media streams (getUser media): This is used to gain access to the users camera and microphone. It can also be used to design WebRTC applications.
+
+* Peer connection: This is the engine required to make high quality audio visual calls on the web.
+
+* Data channels: The specification for data channels has yet to ratified. It will be used for such things as, file transfer, games, co-browsing, shared whiteboard, shared document editing and more.
+
+
+https://dvcs.w3.org/hg/audio/raw-file/tip/webaudio/webrtc-integration.html[Media Integration Coding examples]
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+=== Media streams ===
+
+A media stream represents a media source, containing one or more synchronized media stream tracks.It can be converted to an object URL and passed to a <video> element. You use the getUser media API to get a media stream for the web cam and microphone. The user is then prompted to allow their consent, an example of this can be seen in Opera 12 where a text box drops down and requests permission from the user to allow use of their camera.
+
+Some examples of using the getUser media. The photo booth app allows you take a photograph of the video image and add different effects to it. This app is great fun for the consumer but commercially it can be used for a multitude of reasons. You could be looking to by a car, the callee can be showing you the car live using his smart phone and you can take snapshots of say the engine number or some damage that might require a quote to repair. This is only the tip of the iceberg.
+
+Another example is face recognition. We could do away with passwords for on-line banking, social media sites, on-line shopping or any interaction which requires a password to gain access to an account. These are only two examples of using getUser media, we can expect to see the number of these apps multiply daily.http://dev.w3.org/2011/webrtc/editor/getusermedia.html[Media capture and streams, W3C]
+
+image:images/mediastream.jpg["",width=530,height=400,scaledwidth="50%",scaledheight="50%"]
+
+Image source http://dev.w3.org/2011/webrtc/editor/getusermedia.html[W3C]
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+=== Peer connection ===
+
+This is the engine behind making high quality audio/visual calls on the web.Peer connection allows us to the take the media stream and send it across the web peer to peer. The actual code that implements PeerConnection is now a part of https://developers.google.com/talk/libjingle/[libjingle]. While PeerConnection has no session protocol and no XMPP/Jingle is required, we've reused many useful components from the Libjingle package.http://www.webrtc.org/reference/api-description[WebRTC]
+
+Peer connection is the API for establishing audio video calls (sessions).
+
+**********************************************************************************************************************************
+
+Some built in features:
+
+* It establishes peer to peer links
+* Manages all the various audio and video codecs
+* Sets the encryption
+* Tunes the audio video streams to make better use of the bandwidth
+
+**********************************************************************************************************************************
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+==== Peer connection calling sequences ====
+
+The original content for the following 4 sequence calls was supplied by http://www.webrtc.org/reference/api-description[www.webrtc.org] 
+ 
+===== Start a call sequence diagram =====
+
+This diagram takes us through the step by step sequence of starting a call. ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+image:images/startacall.jpg["",width=500,height=600,scaledwidth="50%",scaledheight="50%"]
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+===== Disconnect a call sequence diagram =====
+
+
+This diagram takes us through the step by step sequence of disconnecting a call.
+
+image:images/disconnect-a-call.jpg["",width=500,height=600,scaledwidth="50%",scaledheight="50%"]
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+===== Receiving a call from a remote peer =====
+
+
+This diagram takes us through the step by step sequence of receiving a call from a remote peer.
+
+image:images/receive-a-call-from-remotepeer.jpg["",width=500,height=600,scaledwidth="50%",scaledheight="50%"]
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+===== The remote peer begins the disconnection of a call =====
+
+This diagram takes us through the step by step sequence of the remote peer initiating the disconnection of a call.
+
+image:images/remotepeer-iniates-the-disconnection.jpg["",width=500,height=600,scaledwidth="50%",scaledheight="50%"]
+
+
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+=== Data channels ===
+
+A data channel is a peer to peer exchange of arbitrary application data. It has low latency, high message rate/throughput and optional unreliable semantics.
+
+**********************************************************************************************************************************
+
+There are many potential use cases for the Data Channel API, including:
+
+* In gaming if you need to send data about say positions, directions. It is more efficient to send them over a peer to peer connection than over HTTP
+* Real time text. An example of this is sending code or a process to an engineer who is out on site
+* File transfer, no more having to drive to your accountants with boxes of paper
+* Remote desktop applications
+* Decentralized networks, you can communicate on a private encrypted channel.
+
+**********************************************************************************************************************************
+
+**********************************************************************************************************************************
+
+Key features of the Data channel API:
+
+* Leverages peer connection session setup
+* Multiple simultaneous channels, with prioritization
+* Reliable and unreliable delivery semantics
+* Built in security (DTLS)
+* Congestion control
+* Can be used with or without audio and video
+* Similar API to websockets
+
+********************************************************************************************************************************* 
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+The syntax is somewhat similar to WebSocket, with send() and onmessage, as you will see in the code sample below:
+
+ 
+---------------------------------------------------------------------------------------------------------------------------------
+
+// PeerConnection setup and offer-answer exchange omitted  
+var dc1 = pc1.createDataChannel("mylabel"); //create the sending DataChannel 
+var dc2 = pc2.createDataChannel("mylabel"); // create the receiving DataChannel  
+
+// append received DataChannel messages to a textarea
+var receiveTextarea = document.querySelector("textarea#receive");
+dc2.onmessage = function(event) { 
+  receiveTextarea.value += event.data;
+};  
+
+var sendInput = document.querySelector("input#send");
+// send message over the DataChannel
+function onSend() {
+  dc1.send(sendInput.value); 
+}
+
+--------------------------------------------------------------------------------------------------------------------------------- 
+
+At present the specification for data channels has yet to ratified, here are some initial proposals and an interim report.
+
+http://tools.ietf.org/html/draft-jesup-rtcweb-data-protocol-00#page-3[IETF/Data Channels]
+
+http://dev.w3.org/2011/webrtc/editor/webrtc.html#datachannel[Data channels WebRTC]
+
+http://lists.w3.org/Archives/Public/public-webrtc/2012Jun/att-0063/W3_Interim_June_2012_Data_Channel.pdf[Interim report on data channels from Randell Jesup/IETF]
+ 
