@@ -1,0 +1,5 @@
+The organisations which are responsible for the WebRTC standards are IETF which is responsible for protocol and signalling and W3C which will look after the standards for APIs for all app developers.  
+
+include::../../webrtc-w3c-content/src/webrtc-w3c-content.asciidoc[]
+
+include::../../webrtc-ietf/src/webrtc-ietf.asciidoc[]
