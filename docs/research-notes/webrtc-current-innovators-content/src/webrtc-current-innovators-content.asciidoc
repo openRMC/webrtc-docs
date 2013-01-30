@@ -1,0 +1,73 @@
+Here we will take a look at some of the current, and up and coming WebRTC innovators in the communication market. Also we will have a look at some fun interactive games which will highlight the different possibilties of WebRTC. Although WebRTC is been driven by the large browser companies, the app development side is coming from the small to medium side companies. 
+
+=== Current Innovators ===
+* Asterisk/Digium (Open Source PBX) is free, open source software that makes it simple to create and deploy a wide range of telephony applications and services. They are adding WebRTC to the Asterisk project which means that with a software update to your Asterisk PBX, your smart-phones, tablets, laptops and desktops can become endpoints for all your PBX features and services.
+http://www.youtube.com/watch?v=8tBYyub1oC0[Digium discusses WebRTC and Asterisk] http://www.digium.com/en/[Digium]
+
+* Bistri (Social Video): Video chat with fun video effects, take screen shots of calls, share them with friends or social networks. Bistri runs in the browser, so there's no need to install additional software or plugins.http://bistri.com/[Bistri] 
+
+* frisB (Free global calling) provides free global calling between any web browser and any phone (or web browser) with no downloads. Simply type in the number you want to call from the frisB screen in a browser that implements WebRTC--the service then calls your contact but does not connect, so a local number is available to call back in the contact's phone call history. The contact then calls back this local number; for the initial use case, the contact needs to know it's you that's calling using frisB. The frisB service then takes the contact's local call and directly connects it to you on the browser (wherever you may be in the world). It's a two-step connection process between a browser and a phone, but does work with any phone on the planet.http://www.frisb.com/[frisB]
+
+* Tenhands (Enterprise HD Video Collaboration) is a desktop HD video collaboration service, it's free and built for business needs. They're in the process of adding WebRTC to their service, so using their service does not require any download to a browser.https://www.tenhands.net/Home.htm[Tenhands]
+
+* Utribo (Software as a Service): "Connect" by Utribo is a service that enables subscribers to receive calls made in a web browser to their computer, phone, or PBX. Based on WebRTC, "Connect" provides voice and video calling capabilities.http://www.utribo.com/our-service/[Utribo]
+
+* Voxeo Labs (Open source enabler for WebRTC services): Voxeo's Phono is a jQuery plug-in that turns any Web browser into a multichannel communications platform, capable of placing and receiving VoIP telephone calls from the browser, as well as handling real-time chat communications. jQuery is a cross-browser JavaScript library, so developers can do more and code less. Phono is a client-side solution and requires zero server-side logic on the part of a developer; all communication is handled by the Voxeo Cloud. Using the Phono plug-in, applications such as Your Second Phone have been created and are available in the Chrome Web Store.http://voxeolabs.com/[Voxeo Labs]
+
+* Vox.io is a simple service that lets you make voice and video calls straight from your browser. No downloads, installations or firewall configurations are required. Vox.io also offers chat (with in-line media, so your shared content loads right beside your conversation), history, SMS, and call options like Quick Call and Group Call. Previously they required a Flash plug-in to run from a web browser, but with WebRTC no download is required. They're available in the Chrome Web Store.http://vox.io/[Vox.io]
+
+* Zingaya ("Call" button for websites) enables voice calls through any computer from a web page. No download or phone is required. Zingaya offers this seamless voice calling capability to any website, whether it's a large e-commerce enterprise or a start-up. Simply embed a "Call" button into the website. Visitors can click that button and the call is forwarded to the website operator's preferred land-line or mobile phone. All that is required is a website; all the visitors need is a browser and microphone.http://zingaya.com/[Zingay].
+
+* Doubango Telecom: After the world's first SIP video clients for Android and iOS (early 2009) Doubango Telecom are proud to present sipML5 Project. sipML5 is the world's first open source HTML5 SIP client entirely written in javascript for integration in social networks (FaceBook, Twitter, Google+), online games, e-commerce websites... No extension, plugin or gateway is needed. The media stack rely on WebRTC project. The client can be used to connect to any SIP or IMS network from your preferred browser to make and receive audio/video calls and instant messages. http://www.sipml5.org/[Live demo] 
+
+* Vline: A cloud video conferencing platform for developers. VLine enables web and mobile developers to integrate high quality, video conferencing into their applications without using Flash or plug-ins. The product provides the necessary tools and cloud services for developers to add instant, live video capabilities into the browser, facilitating Real Time Communication.http://vline.com/[Vline.com]
+
+
+------------------------------------------------------------------------------------------------------------------------------
+Original source from Alan Quayle of nojitter.com
+-------------------------------------------------------------------------------------------------------------------------------
+
+http://www.nojitter.com/post/240001981/the-rise-of-webrtc-the-rules-of-communications-are-about-to-be-rewritten[Alan Quayle/no jitter]
+
+=== Ones to watch out for. ===
+
+* Hookflash: Have produced an excellant ipad app which integrates LinkedIn's directory, giving business users a free over-the-top alternative for voice, HD video and messaging. They are now looking for developers to take this app and re-develop it using WebRTC protocols. http://hookflash.com/[Hookflash]
+ 
+* basysKOM: Are currently working on WebRTC based video chat as a plugin for settop box and TV solution Qt Media Hub. See their latest demonstration. http://www.youtube.com/watch?v=PzqtDvqxcno&feature=plcp[basysKOM]
+
+* Twinsee: Are developing a WebRTC app for mobile and web that gives the user real time communication. This app will be specially geared towards the older generation allowing them to interact with their familly and friends.https://www.twinsee.net[Twinsee]
+
+=== WebRTC/Games ===
+
+Some fun and interesting prototype games using WebRTC. Check out http://protothon.com/sitemedia/webrtc_protothon_docu.pdf[Protothon Blog] for some more ideas using WebRTC.
+
+* itspuzzlible: A live-video puzzle game. A leap into the future of social in-browser gaming. There are 2 scrambled screens of real-time video. The game is re-organise the scrambled video stream whilst your opponent outwits by moving around and confusing you. A truly fun, truly interactive WebRTC puzzle. https://itspuzzlible.appspot.com [itspuzzlible]
+
+* We Blend: A live, real-time distortion tool so friends can play with friends. From far away. An elegant, poetic and addictive take on the uses of WebRTC. http://protothon.com/blog/2012/mar/25/we-blend/[We blend]
+
+* Team Charades: A multiplayer, real-time, online classic. Built by a team of international masters. Team charades is a game in which teams of two compete to guess a number of secret phrases. The phases are revealed by the app and given to a player in each team. http://protothon.com/blog/2012/mar/25/team-charades/[Charades]
+
+* PingPong: A 3D WebRTC ping-pong game. By using colour tracking PingPong turns a post-it note into a table-tennis paddle. A fun, real-time video game of PingPong! Real-Time Colour Tracking.
+http://www.youtube.com/watchfeature=player_detailpage&v=vL82X3M5H8A#t=6s[Ping pong]
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
