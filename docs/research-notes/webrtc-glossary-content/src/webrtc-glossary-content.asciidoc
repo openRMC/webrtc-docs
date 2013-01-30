@@ -1,0 +1,94 @@
+AEC:			Acoustic echo cancellation 
+
+AGC:			Automatic gain control
+
+API:			Application programming interface
+
+CBR:			Constant bitrate
+
+CELT:			Constrained energy lapped transform
+
+DTLS:			Datagram transport layer security.
+
+DTMF:			Dual tone multi frequency
+
+GIPS:			Global investments performance standards
+
+HD:			High definition
+
+HTML:			Hypertext mark-up language
+
+HTTP:			Hypertext transfer protocol
+
+ICE:			Interactive connectivity establishment
+
+IETF:			Internet engineering task force
+
+iLBC:			Internet low bitrate codec
+
+iSAC:			Internet speech audio codec
+
+ITU:			International telecommunications union
+
+JSEP:			JavaScript session establishment protocol.
+
+LAN:			Local area network
+
+LTE:			Long term evolution
+
+MPEG:			Moving pictures expert group
+
+MPLS:			Multi protocol label switching
+
+NAT:			Network address translator.
+
+OTT:			Over the top
+
+PBX:			Private branch exchange
+
+PLC:			Packet loss concealment
+
+PSTN:			Public switched telephone network
+
+RFC:			Request for comment
+
+RTC:			Real time Communication.
+
+RTP:			Real-time transport protocol.
+
+SDP:			Session description protocol
+
+SIP:			Session initiation protocol.
+
+SLA:			Service level agreement.
+
+STC:			Society for technical communications
+
+STRP:			Secure real-time transport protocol.
+
+STUN:			Simple transversal of UDP through NAT
+
+TCP:			Transmission control protocol
+
+TURN:			Transversal using relays around NAT.
+
+UDP:			User datagram protocol.
+
+URL:			Uniform resource locator
+
+VAD:			Voice activity detection
+
+VBR:			Variable bitrate
+
+VoIP:			Voice over internet protocol
+
+VP:			Video protocol
+
+VP8:			Video codec
+
+W3C:			World Wide Web consortium
+
+XML:			Extensible mark-up language
+
+XMPP:			xtensible messaging and presence protocol
+
