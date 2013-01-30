@@ -1,0 +1,48 @@
+=== Network  
+
+Dynamic jitter buffers and error concealment techniques are included for audio and video that help mitigate the effects of packet loss and unreliable networks. Also included are components for establishing a Peer to Peer connection using ICE / STUN / Turn / RTP-over-TCP and support for proxies. This technology comes in part from the Libjingle project.http://www.webrtc.org/faq#TOC-Network[WebRTC.org]
+
+==== Libjingle 
+
+"Libjingle is a collection of open-source C++ code and sample applications that enables you to build a peer-to-peer application. The code handles creating a network connection (through NAT and firewall devices, relay servers, and proxies), negotiating session details (codecs, formats, etc.), and exchanging data. It also provides helper tasks such as parsing XML, and handling network proxies. 
+
+***********************************************************************************************************************************
+
+Features of Libjingle:
+
+* A multi-user voice chat application
+* A multi-user video conferencing application
+* A multi-user live music streaming application
+* A peer-to-peer file sharing application
+
+***********************************************************************************************************************************
+
+http://code.google.com/p/libjingle/source/browse/trunk/README[Libjingle is available on Google Code] for both Windows and UNIX/Linux operating systems.The source code is provided as part of Google's commitment to promoting consumer choice and interoperability in Internet-based real-time-communications. This code is made available under a Berkeley-style license, which means you are free to incorporate it into commercial and non-commercial software and distribute it".https://developers.google.com/talk/libjingle/[Libjingle project].
+
+Libjingle was formed when Google and the XMPP standards foundation designed Jingle. Jingle is an extension of XMPP. It adds peer to peer session control for VoIP or video conferencing. The libjingle library is used by Google to implement jingle in their Google Talk client application. Googel talk provides both voice and text communication.
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+==== ICE/STUN/TURN
+
+ICE and STUN are standardized methods for establishing a peer-to-peer connection on the internet, even if the two end points are behind private network addresses (NAT). At present Google's current stack deviates from the official standard.They are working to rectify this. Google will also support TURN servers to allow connections through tougher firewalls, where relaying and encapsulation are needed. Exactly what type of TURN will be supported has yet to be define.
+
+===== ICE 
+
+"ICE (Interactive Connectivity Establishment) is a protocol for NAT (Network Address Translator) transferal for UDP-based multimedia sessions established with the offer answer model. ICE makes use of the Session Traversal Utilities for NAT (STUN) protocol and its extension, Traversal Using Relay NAT (TURN).  ICE can be used by any protocol" http://tools.ietf.org/html/draft-ietf-mmusic-ice-19#page-8[IETF/ICE] : http://www.ietf.org/proceedings/67/slides/mmusic-11.pdf[IETF/ICE/PDF presentation]
+
+===== STUN 
+
+"Simple Traversal of User Datagram Protocol (UDP) Through Network Address Translators (Nat's) (STUN) is a lightweight protocol that
+allows applications to discover the presence and types of Nat's and firewalls between them and the public Internet.  It also provides the ability for applications to determine the public Internet Protocol (IP) addresses allocated to them by the NAT.  STUN works with many existing Nat's, and does not require any special behavior from them.As a result, it allows a wide variety of applications to work through existing NAT infrastructure."http://www.ietf.org/rfc/rfc3489.txt[IETF/STUN]
+
+===== TURN 
+
+"If a host is located behind a NAT, then in certain situations it can be impossible for that host to communicate directly with other hosts (peers).  In these situations, it is necessary for the host to use the services of an intermediate node that acts as a communication relay.  This specification defines a protocol, called TURN (TraversalUsing Relays around NAT), that allows the host to control the operation of the relay and to exchange packets with its peers using the relay.  TURN differs from some other relay control protocols in that it allows a client to communicate with multiple peers using a single relay address.
+
+The TURN protocol was designed to be used as part of the ICE (Interactive Connectivity Establishment) approach to NAT traversal,
+though it can be also used without ICE."http://tools.ietf.org/html/draft-ietf-behave-turn-16[IETF/TURN]
+
+http://www.viagenie.ca/publications/2008-09-24-astricon-stun-turn-ice.pdf
+
+http://www.ietf.org/proceedings/67/slides/mmusic-11.pdf
