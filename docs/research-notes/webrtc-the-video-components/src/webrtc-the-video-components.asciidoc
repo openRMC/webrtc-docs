@@ -1,0 +1,66 @@
+=== Video 
+
+The VP8 codec is the codec of choice for the WebRTC project, introduced in 2010 as part of the WebM project. It includes components to conceal packet loss, clean up noisy images as well as capture and playback capabilities across multiple platforms. WebM is an audio-video format designed to provide royalty-free, open video compression for use with HTML5 video. The project's development is sponsored by Google Inc.http://www.webmproject.org/[WebMproject]
+
+
+==== The VP8 video codec 
+
+"VP8 is a highly efficient video compression technology that was developed by On2 Technologies. Google acquired On2 in February 2010. It is the video codec included in the WebRTC project https://sites.google.com/site/webrtc/faq#TOC-What-are-the-parameters-of-iSAC-[webrtc.org] This is the first time a video codec that has been  open sourced compares favourably with the industry standard H.264. In July 2010 The Mpeg-tech group carried out a comparison between http://www.itu.int/dms_pub/itu-t/oth/1D/0C/T1D0C0000010002PDFE.pdf[H.264] and Vp8.http://lists.mpegif.org/pipermail/mp4-tech/2010-July/009388.html[Mpeg-4 Tech group] Every year, the MP4-Tech experts group compare every h.264 implementation in order to track performance and quality improvements.The Graphics and http://www.compression.ru/video/codec_comparison/h264_2010/vp8_vs_h264.html[Media Lab of Moscow State University] published a new, deep study of the performance of VP8, x264 and XviD implementations.
+
+It's unusual that Mpeg-4 tech group would test a codec other than h.264 but they did with VP8 and they prove that the results are respectable in many areas.
+
+In HDTV for example, VP8 performed similar to x264 (considered the best implementation of h.264 by previous comparisons) but with 5-20% lower encoding speed. Comments from VP8 developers say that "old comparisons results have an inherent bias against VP8 because input sequences were previously encoded using another codec before being applied to VP8".
+
+These results can improve very quickly with optimizations, and the Russian lab hasn't yet tested implementations of VP8 other than the one provided by Google developers. Ronald Bultje, David Conrad, and Jason Garret-Glaser, x264 developers, are now creating a native VP8 video codec implementation for the open source FFmpeg project.This is the most in depth study done to date, all other studies that compare the two codec have been specific and not as wide ranging.  
+
+The two may differ in results at times, but the difference is not visually apparent to the naked eye. The way seems widely open for the http://www.webmproject.org/code/specs/[WebM(VP8)] Project to provide a truly free, high quality codec for the world. http://www.osnews.com/story/23525/Deep_Analysis_of_the_VP8_Codec_by_H_264_Experts[OS News] Although at the time of writing the VP8 codec still has to be ratified."
+
+The http://www.webmproject.org/tools/vp8-sdk/[VP8 encoder and decoder] are available from the WebM Project
+
+http://www.reelseo.com/wp-content/uploads/2011/02/vp8-bitstream.pdf[VP8 Data Format and Decoding Guide from The WebM project]
+
+
+==== The H.264 video codec
+
+H.264 is an ITU standard for compressing video based on MPEG-4. Taking advantage of today's high-speed chips, H.264 delivers MPEG-4 quality with a frame size up to four times greater. It can also provide MPEG-2 quality at a reduced data rate, requiring as little as one third the original bandwidth. H.264 is used in many video applications today such as blue ray players and mobile devices.
+
+***********************************************************************************************************************************
+H.264 Features
+
+* High compression performance
+* Advanced Intra-Prediction
+* Strong Motion Isolation (4x4, 1⁄4-pel resolution)
+* Multiple Reference Frames
+* Very High Complexity!
+* Weighted Bi-Prediction
+* Context-adaptive VLC/BAC
+* Average bit rate reduction of 50% given fixed fidelity compared to any other video standard
+* Exact match decoding
+* Integer Transform
+* Improved Perceptual Quality
+* In-Loop De-blocking Filter
+* Network friendliness
+* NAL (Network abstraction layer)
+* Enhanced Error Resilience
+* AddPac Technology Confidential
+
+***********************************************************************************************************************************
+ 
+The biggest disadvantage the H.264 codec has with regard to WebRTC is that it is not royalty free, unlike  the VP8 codec. However the VP8 codec is not an option on many existing smart phones or tablets. So what does this mean for WebRTC. Google and Opera are firmly in the VP8 camp, Apple have a large vested interest in H.264. Microsoft is an unknown at present although they do use H.264 in IE9 and if rumours are to be believed, Mozilla will use H.264 but offer the option of using VP8. A standard industry approach, called confusion. Looking at the lay of the land now it would seem we could end up with duel codec support. This would defeat the ideal of WebRTC, royalty free codes for everyone and interoperability.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

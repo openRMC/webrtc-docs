@@ -1,0 +1,8 @@
+name.project=webrtc-research-document
+pdf.builder.path=../../../../asciidoc2html-pdf/asciidoc2html-pdf/asciidoc2html-pdf.sh
+pdf.builder.output=pdf
+html.builder.path=../../../../asciidoc2html-pdf/asciidoc2html-pdf/asciidoc2html-pdf.sh
+html.builder.output=html
+html.builder.publish=/Volumes/docs-dav/mca/research-notes
+perforce.workingdir=/Users/epower/Documents/perforce/projects/MCA-EI-CF-2011-1303/wip/research-notes
+
