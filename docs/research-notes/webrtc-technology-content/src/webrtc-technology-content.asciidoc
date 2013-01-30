@@ -1,0 +1,67 @@
+
+There are a number of elements are required for a client with real time communication, a media engine,an interface and a framework. See figure 1 Media engine components.
+
+image:images/rtc-internal-diagram.jpg["",width=800,height=400,scaledwidth="70%",scaledheight="50%"]
+
+
+The large rectangle area to the left houses the communications /collaboration GUI, this is the visual interface. The visual interface can be a hard interface such as a tablet screen, phone keypad, pc or any other device.The media engine is housed in the the largest rectangle area, and its main  function is that it manages the real time transmission and receipt of a video/audio stream, the rest of the diagram contains the framework. Image source http://www.pkeconsulting.com/pkewebrtc.pdf[PKE]
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ 
+
+Here are the set of functions which enable the media engine to deliver and receive high quality sound.
+
+***********************************************************************************************************************************
+
+Audio
+
+* Setup and control the hardware 
+* RTP, compression, encryption, statistics, etc. 
+* Produce low-latency audio from microphone 
+* Conceal loss, de-jitter and play audio from the network 
+* Cancel echo, VAD, reduce noise, etc. 
+* Manage codecs 		
+
+***********************************************************************************************************************************
+
+Here are the set of functions which enable the media engine to deliver and receive high quality vision.
+
+***********************************************************************************************************************************
+
+Video
+
+* Render video, capture camera input 
+* Video processing (blue screen, gamma, etc.) 
+* Conceal loss, de-jitter and play video from the network 
+* Cancel echo, VAD, reduce noise, etc. 
+* Manage codecs 
+* Bandwidth Management 
+
+***********************************************************************************************************************************
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+The main aim of WebRTC is to combine the media engine and a set of standard APIs with the result being a browser capable of real time communication. In figure 2 you can see the internal workings of a media engine.
+
+image:images/media-engine.jpg["",width=800,height=400,scaledwidth="70%",scaledheight="50%"]
+
+Image source http://www.webrtc.org/reference/architecture[WebRTC]
+
+The WebRTC Media Engine uses both a set of standard 
+components, including codecs to minimize the issues of two WebRTC end points communicating, It also includes a set of standard APIs so a server that the browser connects to can control the WebRTC Media Engine in the client. Beyond the basic media functions, WebRTC includes an API set that enables the controlling server software to cause a direct connection between two WebRTC devices without any other external signaling. By merely telling two WebRTC devices to communicate, the server can initiate a IP based voice or video communications. http://www.pkeconsulting.com/pkewebrtc.pdf[PKE Consulting]
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+image:images/establishing-a-connection.jpg["",width=800,height=400,scaledwidth="70%",scaledheight="50%"]
+
+Image source http://blog.gingertech.net/2012/06/04/video-conferencing-in-html5-webrtc-via-web-sockets/[Silvia Pfeiffer]
+
+*Sample code*
+
+http://www.webrtc.org/reference/native-apis[WebRTC native APIs]
+
+https://code.google.com/p/libjingle/source/browse/#svn%2Ftrunk%2Ftalk%2Fexamples%2Fpeerconnection%2Fclient[Sample client application]
+
+https://code.google.com/p/libjingle/source/browse/#svn%2Ftrunk%2Ftalk%2Fapp%2Fwebrtc[Libjingle source code]
+
+
