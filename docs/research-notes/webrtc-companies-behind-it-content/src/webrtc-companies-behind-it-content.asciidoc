@@ -1,0 +1,14 @@
+There are number of companies involved in the WebRTC project in its present state. They are Google, Mozilla, Opera on the browser side with W3C and IETF on the standards side. Only recently Microsoft have also shown an interest in this project but we are not expected to see any development from them until 2013. Having said that they are currently recruiting developers to work on a project combining Skype with WebRTC, so development could occur earlier than expected.
+
+include::../../webrtc-google/src/webrtc-google.asciidoc[]
+
+include::../../webrtc-mozilla/src/webrtc-mozilla.asciidoc[]
+
+include::../../webrtc-opera/src/webrtc-opera.asciidoc[] 
+
+include::../../webrtc-microsoft/src/webrtc-microsoft.asciidoc[] 
+
+include::../../webrtc-safari/src/webrtc-safari.asciidoc[]
+
+=== IETF & W3C ===
+The organisations which are responsible for the WebRTC standards are IETF which is responsible for protocol and signalling and W3C which will look after the standards for APIs for all app developers. We will take a more in-depth look at these organisations and there roles later in this document. 
