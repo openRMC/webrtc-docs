@@ -1,14 +1,14 @@
-:reporttype:    Research Note TSSG-2012
+:reporttype:    Research Note openRMC-2013
 :reporttitle:   WebRTC case studies
 :author:        Brendan O'Farrell
 :email:         bofarrell@tssg.org
-:group:         Telecommunications Software and Systems Group (TSSG)
-:address:       Waterford Institute of Technology, West Campus, Carriganore, Waterford, Ireland
+:group:         
+:address:       
 :revdate:       July 07, 2012
 :revnumber:     N/A
 :docdate:       July 07, 2012
 :description:   A look at some WebRTC case studies
-:legal:         (C) Waterford Institute of Technology
+:legal:         LICENSE.TXT
 :encoding:      iso-8859-1
 :toc:
 

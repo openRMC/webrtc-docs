@@ -1,6 +1,3 @@
-:reporttype:    Research Note TSSG-2012
-
-
 === W3C (World Wide Web Consortium) === 
 
 Web Real-Time Communications Working Group Charter (Formed 2011)

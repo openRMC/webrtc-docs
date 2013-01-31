@@ -1,4 +1,4 @@
-=== Google and WebRTC 
+=== Google and WebRTC ===
 
 Google have been to the forefront of this project. They want to develop a standard based real time media engine available in all browsers. In order to drive the development of real time communication Google have  released nearly $70 million worth of open source code to developers.  This open source audio and video codecs came about through the acquisition by Google of companies such as Global IP solutions and On2 Technologies. 
 

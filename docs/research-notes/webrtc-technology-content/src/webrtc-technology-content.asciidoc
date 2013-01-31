@@ -1,4 +1,3 @@
-
 There are a number of elements are required for a client with real time communication, a media engine,an interface and a framework. See figure 1 Media engine components.
 
 image:images/rtc-internal-diagram.jpg["",width=800,height=400,scaledwidth="70%",scaledheight="50%"]

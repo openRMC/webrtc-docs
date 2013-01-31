@@ -2,7 +2,6 @@
 
 The VP8 codec is the codec of choice for the WebRTC project, introduced in 2010 as part of the WebM project. It includes components to conceal packet loss, clean up noisy images as well as capture and playback capabilities across multiple platforms. WebM is an audio-video format designed to provide royalty-free, open video compression for use with HTML5 video. The project's development is sponsored by Google Inc.http://www.webmproject.org/[WebMproject]
 
-
 ==== The VP8 video codec 
 
 "VP8 is a highly efficient video compression technology that was developed by On2 Technologies. Google acquired On2 in February 2010. It is the video codec included in the WebRTC project https://sites.google.com/site/webrtc/faq#TOC-What-are-the-parameters-of-iSAC-[webrtc.org] This is the first time a video codec that has been  open sourced compares favourably with the industry standard H.264. In July 2010 The Mpeg-tech group carried out a comparison between http://www.itu.int/dms_pub/itu-t/oth/1D/0C/T1D0C0000010002PDFE.pdf[H.264] and Vp8.http://lists.mpegif.org/pipermail/mp4-tech/2010-July/009388.html[Mpeg-4 Tech group] Every year, the MP4-Tech experts group compare every h.264 implementation in order to track performance and quality improvements.The Graphics and http://www.compression.ru/video/codec_comparison/h264_2010/vp8_vs_h264.html[Media Lab of Moscow State University] published a new, deep study of the performance of VP8, x264 and XviD implementations.

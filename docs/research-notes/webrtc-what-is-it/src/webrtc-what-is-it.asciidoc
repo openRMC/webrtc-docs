@@ -1,21 +1,17 @@
-:reporttype:    Research Note TSSG-2012
+:reporttype:    Research Note openRMC-2013
 :reporttitle:   What is WebRTC
 :author:        Brendan O'Farrell
 :email:         bofarrell@tssg.org
-:group:         Telecommunications Software and Systems Group (TSSG)
-:address:       Waterford Institute of Technology, West Campus, Carriganore, Waterford, Ireland
+:group:         
+:address:       
 :revdate:       July 20, 2012
 :revnumber:     N/A
 :docdate:       June 14, 2012
 :description:   A description of WebRTC.
-:legal:         (C) Waterford Institute of Technology
+:legal:         LICENSE.txt
 :encoding:      iso-8859-1
 :toc:
 
-
-
- 
- 
 
 "WebRTC is a free, open project that enables web browsers with Real-Time Communications (RTC) capabilities via simple Java script APIs. The WebRTC components have been optimized to best serve this purpose."
 http://webrtc.org[WebRTC]
