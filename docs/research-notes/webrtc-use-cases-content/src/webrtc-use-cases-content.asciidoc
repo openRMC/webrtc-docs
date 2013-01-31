@@ -1,3 +1,16 @@
+:reporttype:    Research Note openRMC-2013
+:reporttitle:   WebRTC Use Cases
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         
+:address:       
+:revdate:       August 09, 2012
+:revnumber:     N/A
+:docdate:       June 14, 2012
+:description:   WebRTC Use Cases.
+:legal:         LICENSE.txt
+:encoding:      iso-8859-1
+:toc:
  
 Here we take a look at a small selection of possible use case scenarios.
 

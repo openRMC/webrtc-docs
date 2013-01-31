@@ -4,7 +4,7 @@
 :email:         bofarrell@tssg.org
 :group:         
 :address:       
-:revdate:       July 20, 2012
+:revdate:       November 21, 2012
 :revnumber:     N/A
 :docdate:       June 14, 2012
 :description:   A description of WebRTC.

@@ -1,3 +1,17 @@
+:reporttype:    Research Note openRMC-2013
+:reporttitle:   WebRTC Innovators
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         
+:address:       
+:revdate:       November 21, 2012
+:revnumber:     N/A
+:docdate:       June 14, 2012
+:description:   WebRTC Innovators
+:legal:         LICENSE.txt
+:encoding:      iso-8859-1
+:toc:
+
 Here we will take a look at some of the current, and up and coming WebRTC innovators in the communication market. Also we will have a look at some fun interactive games which will highlight the different possibilties of WebRTC. Although WebRTC is been driven by the large browser companies, the app development side is coming from the small to medium side companies. 
 
 === Current Innovators ===

@@ -1,4 +1,18 @@
-=== Network  
+:reporttype:    Research Note openRMC-2013
+:reporttitle:   WebRTC Network Components
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         
+:address:       
+:revdate:       August 14, 2012
+:revnumber:     N/A
+:docdate:       June 14, 2012
+:description:   Bibliography
+:legal:         LICENSE.txt
+:encoding:      iso-8859-1
+:toc:
+
+=== Network ===  
 
 Dynamic jitter buffers and error concealment techniques are included for audio and video that help mitigate the effects of packet loss and unreliable networks. Also included are components for establishing a Peer to Peer connection using ICE / STUN / Turn / RTP-over-TCP and support for proxies. This technology comes in part from the Libjingle project.http://www.webrtc.org/faq#TOC-Network[WebRTC.org]
 

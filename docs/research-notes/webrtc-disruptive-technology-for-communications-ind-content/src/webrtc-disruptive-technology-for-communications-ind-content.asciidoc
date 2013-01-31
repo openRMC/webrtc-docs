@@ -1,3 +1,17 @@
+:reporttype:    Research Note openRMC-2013
+:reporttitle:   WebRTC as a disruptive technology
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         
+:address:       
+:revdate:       August 9, 2012
+:revnumber:     N/A
+:docdate:       June 14, 2012
+:description:   WebRTC as a disruptive technology in the communications space.
+:legal:         LICENSE.txt
+:encoding:      iso-8859-1
+:toc:
+
 === WebRTC Disruptive Technology for Enterprise Communications. ===
 
 ----------------------------------------------------------------------------------------------------------------------------------

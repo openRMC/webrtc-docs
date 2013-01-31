@@ -1,3 +1,17 @@
+:reporttype:    Research Note openRMC-2013
+:reporttitle:   WebRTC and Opera
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         
+:address:       
+:revdate:       August 9, 2012
+:revnumber:     N/A
+:docdate:       June 14, 2012
+:description:   WebRTC and Opera
+:legal:         LICENSE.txt
+:encoding:      iso-8859-1
+:toc:
+
 === Opera ===
 
 Opera released its new version of its web browser Opera 12 on June 14 last. The new version includes preliminary support for WebRTC. WebRTC will eventually enable standards-based audio and video chat in Web applications. There is also support for the WebRTC media capture APIs, which allow Web content to capture live media streams from the user's microphone and web cam.  

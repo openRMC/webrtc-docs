@@ -1,3 +1,17 @@
+:reporttype:    Research Note openRMC-2013
+:reporttitle:   WebRTC and Mozilla
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         
+:address:       
+:revdate:       August 9, 2012
+:revnumber:     N/A
+:docdate:       June 14, 2012
+:description:   WebRTC and Mozilla.
+:legal:         LICENSE.txt
+:encoding:      iso-8859-1
+:toc:
+
 === Mozilla/Firefox and WebRTC ===
 
 Mozilla Firefox has started showing off WebRTC support in their browser. Nothing stable enough to be able to release it in their main branch of the browser, but this is a positive step as developers can test in multiple browsers.

@@ -1,3 +1,17 @@
+:reporttype:    Research Note openRMC-2013
+:reporttitle:   WebRTC and VoIP
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         
+:address:       
+:revdate:       August 09, 2012
+:revnumber:     N/A
+:docdate:       June 14, 2012
+:description:   WebRTC and VoIP
+:legal:         LICENSE.txt
+:encoding:      iso-8859-1
+:toc:
+
 === VoIP ===
 
 There are three main components to VoIP:

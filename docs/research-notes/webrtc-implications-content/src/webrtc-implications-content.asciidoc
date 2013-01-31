@@ -1,3 +1,16 @@
+:reporttype:    Research Note openRMC-2013
+:reporttitle:   The implications of WebRTC
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         
+:address:       
+:revdate:       August 9, 2012
+:revnumber:     N/A
+:docdate:       June 14, 2012
+:description:   The implications of WebRTC.
+:legal:         LICENSE.txt
+:encoding:      iso-8859-1
+:toc:
 
 * Voice becomes just like all your other communications: organized into your preferred social or office tools. 
 * As long as you're data connected, communications is in the cloud. People need only break out to PSTN (Public Switched Telephone Network) when the other person is not data connected, or the call quality is too low due to their Internet connection. The PSTN becomes the communications path of last resort.

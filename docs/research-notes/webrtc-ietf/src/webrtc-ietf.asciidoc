@@ -1,3 +1,17 @@
+:reporttype:    Research Note openRMC-2013
+:reporttitle:   WebRTC and the IETF
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         
+:address:       
+:revdate:       November 21, 2012
+:revnumber:     N/A
+:docdate:       June 14, 2012
+:description:   WebRTC and the IETF.
+:legal:         LICENSE.txt
+:encoding:      iso-8859-1
+:toc:
+
 === IETF (Internet Engineering Task Force) === 
 
 IETF create standards that apply to the internet to improve internet usability.

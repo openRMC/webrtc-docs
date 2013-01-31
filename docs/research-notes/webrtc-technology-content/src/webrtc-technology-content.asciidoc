@@ -1,3 +1,17 @@
+:reporttype:    Research Note openRMC-2013
+:reporttitle:   WebRTC Technology
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         
+:address:       
+:revdate:       August 09, 2012
+:revnumber:     N/A
+:docdate:       June 14, 2012
+:description:   WebRTC Technology description.
+:legal:         LICENSE.txt
+:encoding:      iso-8859-1
+:toc:
+
 There are a number of elements are required for a client with real time communication, a media engine,an interface and a framework. See figure 1 Media engine components.
 
 image:images/rtc-internal-diagram.jpg["",width=800,height=400,scaledwidth="70%",scaledheight="50%"]

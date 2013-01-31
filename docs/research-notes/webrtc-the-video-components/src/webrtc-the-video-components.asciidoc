@@ -1,3 +1,17 @@
+:reporttype:    Research Note openRMC-2013
+:reporttitle:   WebRTC Video Components
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         
+:address:       
+:revdate:       August 14, 2012
+:revnumber:     N/A
+:docdate:       June 14, 2012
+:description:   WebRTC Video Components
+:legal:         LICENSE.txt
+:encoding:      iso-8859-1
+:toc:
+
 === Video 
 
 The VP8 codec is the codec of choice for the WebRTC project, introduced in 2010 as part of the WebM project. It includes components to conceal packet loss, clean up noisy images as well as capture and playback capabilities across multiple platforms. WebM is an audio-video format designed to provide royalty-free, open video compression for use with HTML5 video. The project's development is sponsored by Google Inc.http://www.webmproject.org/[WebMproject]

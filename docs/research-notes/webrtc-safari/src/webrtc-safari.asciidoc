@@ -4,15 +4,13 @@
 :email:         bofarrell@tssg.org
 :group:         
 :address:       
-:revdate:       August 02, 2012
+:revdate:       August 09, 2012
 :revnumber:     N/A
 :docdate:       August 02, 2012
 :description:   The relationship between Safari and WebRTC
 :legal:         LICENSE.txt
 :encoding:      iso-8859-1
 :toc:
-
-
 
 === Apple/Safari and WebRTC ===
  

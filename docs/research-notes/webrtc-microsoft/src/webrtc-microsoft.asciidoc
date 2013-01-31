@@ -1,3 +1,17 @@
+:reporttype:    Research Note openRMC-2013
+:reporttitle:   WebRTC and Microsoft
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         
+:address:       
+:revdate:       September 17, 2012
+:revnumber:     N/A
+:docdate:       June 14, 2012
+:description:   WebRTC and Microsoft.
+:legal:         LICENSE.txt
+:encoding:      iso-8859-1
+:toc:
+
 === Microsoft and WebRTC ===
 
 "Microsoft, Internet Explorer has put its weight behind WebRTC, a plugin-free technology for voice and video communications in the browser. However, it proposed a different approach other than the one currently favored by other browser vendors, and warned against implementing the technology before there's a common standard." http://gigaom.com/2012/08/06/microsoft-webrtc-w3c/[Janko Roettgers]

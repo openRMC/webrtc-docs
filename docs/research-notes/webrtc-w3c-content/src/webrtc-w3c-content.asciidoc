@@ -1,3 +1,17 @@
+:reporttype:    Research Note openRMC-2013
+:reporttitle:   WebRTC and the W3C
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         
+:address:       
+:revdate:       September 19, 2012
+:revnumber:     N/A
+:docdate:       June 14, 2012
+:description:   WebRTC and the W3C
+:legal:         LICENSE.txt
+:encoding:      iso-8859-1
+:toc:
+
 === W3C (World Wide Web Consortium) === 
 
 Web Real-Time Communications Working Group Charter (Formed 2011)

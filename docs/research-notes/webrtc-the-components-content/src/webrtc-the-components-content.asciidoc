@@ -1,3 +1,17 @@
+:reporttype:    Research Note openRMC-2013
+:reporttitle:   WebRTC Components
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         
+:address:       
+:revdate:       August 08, 2012
+:revnumber:     N/A
+:docdate:       June 14, 2012
+:description:   WebRTC Components
+:legal:         LICENSE.txt
+:encoding:      iso-8859-1
+:toc:
+
 There are 3 components to WebRTC:
 
 * Audio

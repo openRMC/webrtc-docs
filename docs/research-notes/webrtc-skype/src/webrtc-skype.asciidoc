@@ -1,3 +1,17 @@
+:reporttype:    Research Note openRMC-2013
+:reporttitle:   WebRTC and Skype
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         
+:address:       
+:revdate:       September 17, 2012
+:revnumber:     N/A
+:docdate:       June 14, 2012
+:description:   WebRTC and Skype
+:legal:         LICENSE.txt
+:encoding:      iso-8859-1
+:toc:
+
 === Skype ===
 
 Skype was launched as a start-up in 2003 and to date it has 100 million plus active users. Microsoft purchased Skype in 2011 for an astonishing $8.5 billion, which is basically around $1.000 per user.
