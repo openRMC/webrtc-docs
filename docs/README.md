@@ -1,0 +1,1 @@
+This area will host background information, research notes, documents and presentations which help to explain what WebRTC is, who the companies are behind it, the oraganisations setting the standards. It takes a look at the components and technology of WebRTC. The area will also look at who the current innovators are and who should benifit from WebRTC.

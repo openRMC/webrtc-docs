@@ -1,0 +1,40 @@
+:reporttype:    Research Note openRMC-2013
+:reporttitle:   WebRTC Use Cases
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         
+:address:       
+:revdate:       August 09, 2012
+:revnumber:     N/A
+:docdate:       June 14, 2012
+:description:   WebRTC Use Cases.
+:legal:         LICENSE.txt
+:encoding:      iso-8859-1
+:toc:
+ 
+Here we take a look at a small selection of possible use case scenarios.
+
+* Have you ever played an online game were you found yourself screaming at your team mate or opponent but to no avail as the technology doesn't allow for audio/visual interaction while playing online. WebRTC will give you that capability. You can now play a game where you see the video and hear the audio of your opponent or team mate and still play the game live using WebRTC data channels.
+
+* Do you find looking for the right employee time consuming and a drain on your resources. You have to put an interview panel together or use the services of an employment agency, this all takes time and money to organise. We have all heard of companies like Microsoft using LinkedIN to find the right type of employee. That is an excellent use of available resources but, what if we can take it one step further. Initial contact is made by the HR department from Microsoft using LinkedIN and WebRTC peer to peer communication, so now they can filter out the people that don't suit their criteria without any costly interviews. Once they have the people they think can suit their needs, then the panel interviews them. But WebRTC is not finished, all the participants can do the interview process from their office or home and with file sharing, and soon screen sharing any tasks the interviewee is asked to complete during the interview process, can be viewed by all the panel members on their screens. The monitory costs and the time it normally takes to fill a position is drastically reduced. This is all made possible by using WebRTC.  
+
+* So, your self employed, maybe with a couple of employees or you just work on your own. You are norm anally on site from early morning and you are not home until late the same evening. The tax returns are due but you can't afford the time to drive to your accountants and lose a days work. But you have WebRTC on your desktop PC, so you have peer to peer communication, file sharing and screen sharing. So instead of going to the accountants office they visit you at your office via WebRTC in your HTML5 enabled browser on your desktop PC. Now the accountant can guide you through your tax returns, by talking you through the online process, organising the files you have shared with them while talking to them, or if need be, you can share your screen with your accountant so they can confirm you online submission to the tax authorities is correct. This process has now only taken a small amount of time, so you are available to work on site for a period that same day.
+
+* You purchased a smart TV a few months ago and you just received an e-mail offering a range of new services. But this will require a firmware update and not being technically minded you will need help with this upgrade. A call out fee of one hundred euro  from the retailer is much to expensive. So what to do? Press the help button on your remote control. The browser opens in your TV and asks you if you require assistance from the technical help and if so press select. Now like magic a real person appears on your TV screen and talks you through the process. He can show you which buttons to press on your remote as he has also got the same remote in his hands. In the space of a few minutes and of no expense to you, the upgrade is complete and you can avail of all the new services.
+
+* You really need to talk to your friend face to face about your school project but you live to far away. WebRTC is the answer.  Open your Facebook account, select the audio/visual call button. Then you choose the friend you wish to talk with. They accept the request and now you have one to one audio visual communication. With WebRTC file sharing, you can send and receive the project notes, while still discussing the project all at the same time. This form of integrated communication will take social media to a whole new level.
+
+* No more having to drive long distances to the monthly sales meeting. Now you have video conferencing and sharing files from inside an app. The office calls their sales representative from inside the app and are able to share files through the peer to peer connection as they are talking via the data channel. Thus saving valuable sales time and in turn creating a better profit margin. All done in real time through multiple HTML5 enabled browsers.
+
+* You are a paramedic/doctor attending a serious road traffic accident, a driver is trapped in his car and needs to be removed to hospital urgently but this requires an on site operation which you have no experience of. With a smart phone or tablet using WebRTC, an off site surgeon based anywhere in the world can now direct you as he views the situation and talks you through the process thus saving the driver's life.
+
+* The area you live can be become isolated in the winter months leaving you unable to leave your house to go to school or college.
+But you still have deadlines to meet such as a project which requires the implementation of an application. The lecture has to  interview you about the project, view you coding and talk through it and finally see the application running on your desktop. With WebRTC peer to peer communication, file sharing and screen sharing, all of this is possible so you never have to fall behind the other students or lose valuable marks for a late presentation.
+
+* Dating sites can now introduce possible couples to one another using WebRTC, negating the security risks of a blind date. The first meeting can take place in the comfort of your own, home where everybody is at their most natural. No costly dinners or new cloths and if you don't like them just end the call.
+
+* This user case came to mind when the local priest was visiting my father at home. He proceeded to bemoan the fact that he had to look after a number of small parishes now, while trying to call out to the old and sick for confession or communion and time was against him. Now WebRTC can't do a whole lot about the communion, not yet anyway. But the confession can be facilitated quite easily in WebRTC. Yes, you will say the elderly are not particular computer savvy but they don't have to be. They press the power button on their PC, they click on their web browser, they wait, the priest calls, they are asked do they want accept this call, they press yes, now communication can begin. It really is that simple.
+
+* Adult entertainment industry. There are no reasons to expand on this user case just to say the possibilities are endless.
+
+ 

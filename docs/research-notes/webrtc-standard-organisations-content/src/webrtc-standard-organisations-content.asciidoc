@@ -1,0 +1,19 @@
+:reporttype:    Research Note openRMC-2013
+:reporttitle:   WebRTC and Standardisation
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         
+:address:       
+:revdate:       November 21, 2012
+:revnumber:     N/A
+:docdate:       June 14, 2012
+:description:   WebRTC and Standardisation.
+:legal:         LICENSE.txt
+:encoding:      iso-8859-1
+:toc:
+
+The organisations which are responsible for the WebRTC standards are IETF which is responsible for protocol and signalling and W3C which will look after the standards for APIs for all app developers.  
+
+include::../../webrtc-w3c-content/src/webrtc-w3c-content.asciidoc[]
+
+include::../../webrtc-ietf/src/webrtc-ietf.asciidoc[]

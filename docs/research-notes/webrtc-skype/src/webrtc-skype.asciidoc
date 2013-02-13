@@ -1,0 +1,26 @@
+:reporttype:    Research Note openRMC-2013
+:reporttitle:   WebRTC and Skype
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         
+:address:       
+:revdate:       September 17, 2012
+:revnumber:     N/A
+:docdate:       June 14, 2012
+:description:   WebRTC and Skype
+:legal:         LICENSE.txt
+:encoding:      iso-8859-1
+:toc:
+
+=== Skype ===
+
+Skype was launched as a start-up in 2003 and to date it has 100 million plus active users. Microsoft purchased Skype in 2011 for an astonishing $8.5 billion, which is basically around $1.000 per user.
+
+Presently Skype are running an ad campaign called, "It's time to Skype".One of the more effective ads is titled  "When did it become okay to text Mum Happy Birthday?". Skype believe that face to face communication is being lost in this digital age and it needs to be brought back.
+
+While Skype may view the advent of texting and instant linkage through social media as a threat to its market share in communication, it may have a bigger threat on the horizon, WebRTC. Skype may just become obsolete or will it?. Microsoft state they did not purchase Skype for what it is but what it will become. Three things have occurred recently which lend credence to that statement. One that Skype have started to adapt the VP8 video codec, at present this is the codec of choice for WebRTC. Secondly they have been actively trying to recruit developers to develop an app which will incorporate WebRTC and Skype. The app will allow communication between their legacy customers and WebRTC. The third move was partnering with Facebook, to offer Skype calling through Facebook.
+In early September 2012 Skype announced that it is to start using the Opus audio codec. Many are looking for this codec to be implemented as standard in WebRTC. Also in early September the IETF announced a standardization of the OPUS codec in RCF 6716.
+
+These issues indicate that Skype is heading towards a pure web based service, but more importantly it means that Skype are not afraid to change to fit the current or future market. And at present the biggest change of all is WebRTC.
+
+Skype can and will adopt WebRTC when the time comes. They will do the necessary changes in their network architecture to fit WebRTC right into their business plan and continue to grow.  

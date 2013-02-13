@@ -1,0 +1,45 @@
+:reporttype:    Research Note openRMC-2013
+:reporttitle:   WebRTC and the W3C
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         
+:address:       
+:revdate:       September 19, 2012
+:revnumber:     N/A
+:docdate:       June 14, 2012
+:description:   WebRTC and the W3C
+:legal:         LICENSE.txt
+:encoding:      iso-8859-1
+:toc:
+
+=== W3C (World Wide Web Consortium) === 
+
+Web Real-Time Communications Working Group Charter (Formed 2011)
+
+"The mission of the http://www.w3.org/2011/04/webrtc/[Web Real-Time Communications Working Group], part of the Ubiquitous Web Applications Activity, is to define client-side APIs to enable Real-Time Communications in Web browsers.
+These APIs should enable building applications that can be run inside a browser, requiring no extra downloads or plugins, that allow communication between parties using audio, video and supplementary real-time communication, without having to use intervening servers (unless needed for firewall traversal, or for providing intermediary services)
+
+The working groups scope is enabling real-time communications between Web browsers require the following client-side technologies to be available:
+
+***********************************************************************************************************************************
+
+* API functions to explore device capabilities, e.g. camera, microphone, speakers (currently in scope for the Device APIs & Policy Working Group) 
+* API functions to capture media from local devices (camera and microphone) (currently in scope for the Device APIs & Policy Working Group) 
+* API functions for encoding and other processing of those media streams, 
+* API functions for establishing direct http://dev.w3.org/2011/webrtc/editor/webrtc.html#peer-to-peer-connections[peer-to-peer connections], including firewall/NAT traversal 
+* API functions for decoding and processing (including echo cancelling, stream synchronization and a number of other functions) of those streams at the incoming end, 
+* Delivery to the user of those media streams via local screens and audio output devices (partially covered with HTML5)" 
+
+***********************************************************************************************************************************
+
+***********************************************************************************************************************************
+
+Key documents are:
+
+* http://dev.w3.org/2011/webrtc/editor/webrtc.html
+* http://dev.w3.org/2011/webrtc/editor/getusermedia.html
+* https://dvcs.w3.org/hg/dap/raw-file/tip/media-stream-capture/scenarios.html
+
+***********************************************************************************************************************************
+
+The working group will not be looking at the protocols for WebRTC, this will the domain of  IETF.http://www.w3.org/2011/04/webrtc-charter.html[W3C]

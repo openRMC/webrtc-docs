@@ -1,0 +1,32 @@
+:reporttype:    Research Note openRMC-2013
+:reporttitle:   WebRTC and the IETF
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         
+:address:       
+:revdate:       November 21, 2012
+:revnumber:     N/A
+:docdate:       June 14, 2012
+:description:   WebRTC and the IETF.
+:legal:         LICENSE.txt
+:encoding:      iso-8859-1
+:toc:
+
+=== IETF (Internet Engineering Task Force) === 
+
+IETF create standards that apply to the internet to improve internet usability.
+http://tools.ietf.org/wg/rtcweb/[The IETF RTCWEB WG] was formed in April 2011 and is currently generating RFCs in moving to a standard. The IETF is charged with setting all the protocols and signalling involved in WebRTC. To View all drafts please click on link. http://tools.ietf.org/html/draft-ietf-rtcweb-rtp-usage-01[IETF and WebRTC] 
+
+***********************************************************************************************************************************
+
+Key documents are:
+ 
+* draft-ietf-rtcweb-data-channel 
+* draft-ietf-rtcweb-jsep  
+* draft-ietf-rtcweb-overview  
+* draft-ietf-rtcweb-rtp-usage  
+* draft-ietf-rtcweb-security-arch  
+* draft-ietf-rtcweb-security  
+* draft-ietf-rtcweb-use-cases-and-requirements
+
+***********************************************************************************************************************************

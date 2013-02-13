@@ -1,0 +1,25 @@
+:reporttype:    Research Note openRMC-2013
+:reporttitle:   Apple/Safari and WebRTC
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         
+:address:       
+:revdate:       August 09, 2012
+:revnumber:     N/A
+:docdate:       August 02, 2012
+:description:   The relationship between Safari and WebRTC
+:legal:         LICENSE.txt
+:encoding:      iso-8859-1
+:toc:
+
+=== Apple/Safari and WebRTC ===
+ 
+At present Apple have no part in the implementation or development of WebRTC in their Safari web browser, as they have vested interest in their FaceTime walled garden of audio/visual communication and in the H.264 audio codec, which isn't part of WebRTC at present.
+
+However WebRTC4all built by the Google development team is an extension for Safari and other browsers. This allows developers to add the WebRTC functions such as audio/video streaming in all browsers now and they will easily be able to switch to the official implementation when it's added by Apple and others.
+ 
+
+
+
+ 
+

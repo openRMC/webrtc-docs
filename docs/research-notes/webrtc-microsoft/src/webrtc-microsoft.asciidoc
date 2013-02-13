@@ -1,0 +1,23 @@
+:reporttype:    Research Note openRMC-2013
+:reporttitle:   WebRTC and Microsoft
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         
+:address:       
+:revdate:       September 17, 2012
+:revnumber:     N/A
+:docdate:       June 14, 2012
+:description:   WebRTC and Microsoft.
+:legal:         LICENSE.txt
+:encoding:      iso-8859-1
+:toc:
+
+=== Microsoft and WebRTC ===
+
+"Microsoft, Internet Explorer has put its weight behind WebRTC, a plugin-free technology for voice and video communications in the browser. However, it proposed a different approach other than the one currently favored by other browser vendors, and warned against implementing the technology before there's a common standard." http://gigaom.com/2012/08/06/microsoft-webrtc-w3c/[Janko Roettgers]
+
+"Customizable, Ubiquitous Real Time Communication over the Web," or short CU-RTC-Web, is Microsoft's contribution to the W3C WebRTC working group. Microsoft have stated that they have been closely involved in the work on the WebRTC standard with both the IETF and W3C since 2010. Unlike other browser companies their work has been very quite and not as publicly available as other interested parties. This has of course now changed with the release of their version of WebRTC, CU-RTC-Web. 
+
+There are a number of reasons Microsoft have taking a different approach, the most notable being the VP8 video codec that has been put forward as the default video codec. Although Microsoft have and still have to some issues with this codec, they feel developers should not be tied down to individual codes. They also have concerns in the predetermined way media is proposed to be sent over the network, they prefer a more flexible and customised approach to implement the technology on legacy devices. 
+
+Aside from the issues with codecs and media management, Microsoft feel that eventually all parties concerned will agree on common standards. With CU-RTC-Web Microsoft envisage that the wall garden approach of Skype will come tumbling down and allow interoperability between Skype and other OTT operators such as Google Talk.

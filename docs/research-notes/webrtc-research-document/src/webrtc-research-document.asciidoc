@@ -1,0 +1,251 @@
+:reporttype:    Research Note openRMC-2013
+:reporttitle:   WebRTC
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         
+:address:       
+:revdate:       September 18, 2012
+:revnumber:     N/A
+:docdate:       June 14, 2012
+:description:   This document introduces WebRTC.Real time communication across multiple browsers.
+:legal:         LICENSE.txt
+:encoding:      iso-8859-1
+:toc:
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+== Introduction ==
+ 
+The primary aim of this document is to gain an understanding of WebRTC (Real Time Communication). How and why is it being developed. It will look at the organisations developing WebRTC and those which will set the standards for developers and users alike. The document will investigate the required components of WebRTC. It will review it's key features and the associated technology. It will discuss the possible effects of WebRTC on the established Telecommunication's Industry. We will take a look at the future possibilities and benefits of WebRTC. 
+ 
+As WebRTC is still in the process of having standards and protocols ratified, this document will evolve over time and will require regular content updates.
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+== What is WebRTC  
+
+include::../../webrtc-what-is-it/src/webrtc-what-is-it.asciidoc[]   
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+== Who are the organisations behind WebRTC 
+
+include::../../webrtc-companies-behind-it-content/src/webrtc-companies-behind-it-content.asciidoc[]
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+== Who will set the standards for WebRTC 
+ 
+include::../../webrtc-standard-organisations-content/src/webrtc-standard-organisations-content.asciidoc[]
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+
+== The components of WebRTC 
+ 
+include::../../webrtc-the-components-content/src/webrtc-the-components-content.asciidoc[] 
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+== The key features of WebRTC
+
+include::../../webrtc-key-features-content/src/webrtc-key-features-content.asciidoc[]
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+== WebRTC Technology 
+ 
+include::../../webrtc-technology-content/src/webrtc-technology-content.asciidoc[]
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+== WebRTC and the communications industry 
+
+include::../../webrtc-the-telecoms-ind-content/src/webrtc-the-telecoms-ind-content.asciidoc[]
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+== Possible applications for WebRTC
+
+include::../../webrtc-use-cases-content/src/webrtc-use-cases-content.asciidoc[]
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+== Current innovators of WebRTC applications
+
+include::../../webrtc-current-innovators-content/src/webrtc-current-innovators-content.asciidoc[]
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+== The benefits of WebRTC
+
+include::../../webrtc-implications-content/src/webrtc-implications-content.asciidoc[]
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+== Conclusion 
+
+Up until now you could do anything in your browser except for real time video calling, of course you could use flash but flash is not available on all devices or platforms. WebRTC gives you real communication it will reduce the need for flash in the browser.
+
+Allowing the audio and video codecs to be open sourced under a very lenient open source license has made it very attractive to place WebRTC into commercial products. With Goggle, Microsoft, Opera and Mozilla backing WebRTC it would seem that all is well in the browser world. But until all the standards have been set by W3C and IETF, and adapted by all interested parties we won't celebrate the dawn of a new communication phase. This has become all the more apparent in the recent weeks with Microsoft releasing their suggested version of WebRTC called CU-RTC-Web. All we as the end user's can hope for is that some common sense will prevail, sooner rather than later.
+
+Aside from all the political posturing, WebRTC is here to stay. It will bring great innovation, vast commercial opportunities and most importantly real time communication for everyone.
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+== Glossary
+
+include::../../webrtc-glossary-content/src/webrtc-glossary-content.asciidoc[]
+
+ 
+== References
+
+
+*Primary References* 
+
+
+http://www.webrtc.org/
+
+http://www.webrtc.org/reference/api-description
+
+http://www.w3.org/2007/uwa/Activity.html
+
+http://www.w3.org/2009/dap/
+
+http://www.w3.org/2011/04/webrtc-charter.html
+
+http://dev.w3.org/2011/webrtc/editor/webrtc.html#datachannel
+
+http://lists.w3.org/Archives/Public/public-webrtc/2012Jun/att-0063/W3_Interim_June_2012_Data_Channel.pdf
+
+http://www.w3counter.com/globalstats.php
+
+https://www.ietf.org
+
+https://www.ietf.org/meeting/83/index.html
+
+http://tools.ietf.org/html/draft-ietf-rtcweb-jsep-00
+
+http://tools.ietf.org/html/draft-ietf-rtcweb-rtp-usage-01 
+ 
+https://developers.google.com/talk/libjingle/
+
+http://sites.google.com/site/webrtc/home
+
+ 
+
+*Additional References* 
+
+
+http://browserid.org/
+
+https://mozillalabs.com/blog/2012/03/experimenting-with-social-features-in-firefox/
+
+http://mozilla.org/persona/
+
+https://github.com/mozilla/socialapi-dev
+
+http://www.voipusersconference.org/2011/webrtc1/
+
+http://voxeolabs.com/
+
+http://phono.com/
+
+http://tools.google.com/dlpage/chromesxs
+
+http://phono.com/webrtc
+
+http://www.slashgear.com/google-webrtc-browser-voicevideo-chat-released-to-take-on-skype-and-facetime-01156079/
+
+http://thenextweb.com/google/2011/06/01/google-releases-developer-preview-of-webrtc-its-open-real-time-voice-and-video-platform/
+
+https://github.com/mozilla/mozilla-demo-social-service
+
+https://plus.google.com/106186763111547737548/posts
+
+https://developer.mozilla.org/en/JavaScript
+
+http://hacks.mozilla.org/2012/04/webrtc-efforts-underway-at-mozilla/
+
+http://files.labs.ericsson.net/apis/web-real-time-communication/videochat-example.zip
+
+http://bloggeek.me/webrtc/
+
+http://bloggeek.me/webrtc-series/
+
+http://www.youtube.com/watch?v=9dpzUQmtumk
+
+http://bloggeek.me/category/voip/
+
+http://www.electronista.com/articles/11/08/03/skype.using.vp8.even.with.microsoft.patent.gripes/
+
+http://www.webpronews.com/skype-welcomes-you-back-to-humanity-2012-04
+
+http://bloggeek.me/webrtc-kills-enterprise-video-conferencing/
+
+https://groups.google.com/forum/
+
+http://www.pcmag.com/article2/0,2817,2332339,00.asp
+
+http://datatracker.ietf.org/wg/rtcweb/
+
+http://www.nojitter.com/post/240001981/the-rise-of-webrtc-the-rules-of-communications-are-about-to-be-rewritten
+
+http://zingaya.com/
+
+http://vox.io/
+
+http://voxeolabs.com/
+
+http://www.utribo.com/our-service/
+
+http://www.utribo.com/our-service/
+
+https://www.tenhands.net/Home.htm
+
+http://www.frisb.com/
+
+http://bistri.com/
+
+http://www.digium.com/en/
+
+https://plus.google.com/113817074606039822053/posts
+
+http://www.nojitter.com/post/240001981/the-rise-of-webrtc-the-rules-of-communications-are-about-to-be-rewritten?pgno=3
+
+http://www.theverge.com/2012/6/27/3120273/skype-for-browsers-webrtc-job-listing-rumor
+
+http://arstechnica.com/information-technology/2012/06/opera-12-arrives-with-webcam-apis-and-experimental-webgl-support/
+
+http://www.opus-codec.org/
+
+http://www.pkeconsulting.com/pkewebrtc.pdf
+
+https://datatracker.ietf.org/doc/draft-ietf-rtcweb-use-cases-and-requirements/?include_text=1
+
+http://www.stcconsultants.org/forums/posts.asp?group=&topic=417632&DGPCrPg=1&hhSearchTerms=&#Post417632
+
+http://techcrunch.com/tag/webrtc/
+
+http://tech.dailybuzz.com/
+
+http://gigaom.com/2012/06/26/skype-webrtc-web-client/
+
+http://vline.com/
+
+http://arstechnica.com/business/2012/01/hands-on-building-an-html5-photo-booth-with-chromes-new-webcam-api/
+
+http://www.youtube.com/watch?v=E8C8ouiXHHk&feature=youtube_gdata_player
+
+http://francisshanahan.com/index.php/2011/stream-a-webcam-using-javascript-nodejs-android-opera-mobile-web-sockets-and-html5
+
+http://blog.gingertech.net/2012/06/04/video-conferencing-in-html5-webrtc-via-web-sockets/
+
+
+
+
+
+
+
+
+

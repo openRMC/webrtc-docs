@@ -1,0 +1,80 @@
+:reporttype:    Research Note openRMC-2013
+:reporttitle:   WebRTC Audio Components
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         
+:address:       
+:revdate:       September 17, 2012
+:revnumber:     N/A
+:docdate:       June 14, 2012
+:description:   WebRTC Audio Components
+:legal:         LICENSE.txt
+:encoding:      iso-8859-1
+:toc:
+
+=== Audio ===  
+
+The WebRTC project offers a complete stack for voice communications. It includes not only the necessary codecs, but other
+components crucial for a great experience. This includes software based acoustic echo cancellation (AEC), automatic gain control (AGC), noise reduction, noise suppression and hardware access and control across multiple platforms. There are audio codec standards set by the WebRTC working group charter. They are the iLBC and the iSAC audio codecs,both developed by Global IP Solutions. Global IP Solutions was purchased by Google in 2010.Since then Google have provided the audio codecs royalty free. http://www.webrtc.org/ilbc-freeware/ilbc-extra-documentation[webrtc.org] 
+ 
+There is a third codec which many have been clamouring to be excepted into WebRTC, and that is the Opus codec.The Internet Engineering Task Force has standardized the Opus audio compression technology as RFC 6716 in early September 2012. The move paves the way for much broader use of Opus for anything from playing music to online voice chats. Opus is implemented in Skype and now Mozilla are to adapt it in their Firefox browser for WebRTC.  
+
+==== The iSAC audio codec ====
+
+iSAC is a robust, bandwidth adaptive, wideband and super-wideband voice codec developed by Global IP Solutions used in many Voice over IP VoIP and streaming audio applications. iSAC is used by industry leaders in hundreds of millions of VoIP endpoints. This codec is included as part of the WebRTC project.https://sites.google.com/site/webrtc/faq#TOC-What-are-the-parameters-of-iSAC-[webrtc.org]
+
+***********************************************************************************************************************************
+
+Features
+
+* The sampling frequency is 16kHz (wideband) or 32 kHz (super wideband).
+* Adaptive and variable bit rate is 10 kbit/s to 52 kbit/s
+* Adaptive packet size is 30 to 60ms.
+* Complexity comparable to http://www.itu.int/rec/T-REC-G.722.2/en[G.722.2] at comparable bit-rates   
+* Algorithmic delay of frame size plus 3ms. 
+		
+***********************************************************************************************************************************
+
+==== The iLBC audio codec ====
+
+iLBC is a free narrowband voice codec that was developed by Global IP Solutions used in many Voice over IP VoIP and streaming audio applications. In 2004, the final IETF RFC versions of the iLBC codec spec and the iLBC RTP Profile draft became available. This codec is included as part of the WebRTC project.https://sites.google.com/site/webrtc/faq#TOC-What-are-the-parameters-of-iSAC-[webrtc.org]http://www.h-online.com/nettools/rfc/drafts/draft-ietf-avt-rtp-isac-01.shtml#page-3[IETF Draft] 
+
+***********************************************************************************************************************************
+
+Features
+
+* Bitrate 13.33 kbps (399 bits, packetized in 50 bytes) for the frame size of 30 ms and 15.2 kbps (303 bits, packetized in 38 bytes) for the frame size of 20 ms
+* Basic quality higher then http://www.itu.int/net/itu-t/sigdb/speaudio/Gseries.htm#G.729[G.729A], high robustness to packet loss
+* Computational complexity in a range of G.729A
+
+***********************************************************************************************************************************
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+==== Opus interactive audio Codec ====
+
+
+The Opus codec is designed for interactive speech and audio transmission over the Internet. It is designed by the IETF Codec Working Group and incorporates technology from Skype's http://tools.ietf.org/html/draft-vos-silk-02[SILK codec] and Xiph.Org's CELT codec.
+
+The Opus codec is designed to handle a wide range of interactive audio applications, including Voice over IP, videoconferencing, in-game chat, and even remote live music performances. It can scale from low bit-rate narrowband speech to very high quality stereo music.http://www.opus-codec.org/[Opus-codec.org]  
+
+***********************************************************************************************************************************
+
+Features:
+
+* Bit-rates from 6 kb/s to 510 kb/s
+* Sampling rates from 8 to 48 kHz
+* Frame sizes from 2.5 ms to 60 ms
+* Support for both constant bit-rate (CBR) and variable bit-rate (VBR)
+* Audio bandwidth from narrowband to full-band
+* Support for speech and music
+* Support for mono and stereo
+* Support for up to 255 channels (multistream frames)
+* Dynamically adjustable bitrate, audio bandwidth, and frame size
+* Good loss robustness and packet loss concealment (PLC)
+* Floating point and fixed-point implementation
+
+***********************************************************************************************************************************
+
+You can read the specification in the http://tools.ietf.org/html/draft-ietf-codec-opus-16[latest Internet Draft].
+ 

@@ -1,14 +1,14 @@
-:reporttype:    Research Note TSSG-2012
+:reporttype:    Research Note openRMC-2013
 :reporttitle:   Bibliography
 :author:        Brendan O'Farrell
 :email:         bofarrell@tssg.org
-:group:         Telecommunications Software and Systems Group (TSSG)
-:address:       Waterford Institute of Technology, West Campus, Carriganore, Waterford, Ireland
-:revdate:       June 14, 2012
+:group:         
+:address:       
+:revdate:       July 13, 2012
 :revnumber:     N/A
 :docdate:       June 14, 2012
 :description:   Bibliography
-:legal:         (C) Waterford Institute of Technology
+:legal:         LICENSE.txt
 :encoding:      iso-8859-1
 :toc:
 

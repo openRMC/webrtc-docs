@@ -1,0 +1,21 @@
+:reporttype:    Research Note openRMC-2013
+:reporttitle:   WebRTC and Mozilla
+:author:        Brendan O'Farrell
+:email:         bofarrell@tssg.org
+:group:         
+:address:       
+:revdate:       August 9, 2012
+:revnumber:     N/A
+:docdate:       June 14, 2012
+:description:   WebRTC and Mozilla.
+:legal:         LICENSE.txt
+:encoding:      iso-8859-1
+:toc:
+
+=== Mozilla/Firefox and WebRTC ===
+
+Mozilla Firefox has started showing off WebRTC support in their browser. Nothing stable enough to be able to release it in their main branch of the browser, but this is a positive step as developers can test in multiple browsers.
+
+Mozilla attended IETF 83 in Paris, and  showed an early http://hacks.mozilla.org/2012/04/webrtc-efforts-underway-at-mozilla/[demo] of a simple video call between two Browser-ID-authenticated parties in a special build of Firefox with WebRTC support.  
+
+Mozilla have been experimenting with integrating social features in the browser, to combine it with WebRTC to establish a video call between two users who are signed in using Browser ID (now called Persona). The Social-API add - on, once installed, provides a sidebar where web content from the social service provider is rendered. In the  demo social service, you can see a  "buddy list" of people who are currently signed in using http://www.mozilla.org/en-US/persona/[Persona].http://hacks.mozilla.org/2012/04/webrtc-efforts-underway-at-mozilla/[Mozilla.org] 
