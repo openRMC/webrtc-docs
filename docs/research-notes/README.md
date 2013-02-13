@@ -2,26 +2,25 @@ This area hosts research notes, these are little sippets of text which represent
 
 ## Text Formatting of the Notes 
 
-Each research note is written in [Asciidoc](http://www.methods.co.nz/asciidoc/). The reason for using AsciiDoc formatting is to follow the process of write once, use everywhere mentality. AsciiDoc can be easily translated in to many different formats including HTML, LATEX, PDF, EPUB, man page. This process encourages authors to write content in distinct blocks which could then be re-used in documentation, articles, web pages, man pages at a later stage, without the need to constantly cut and paste text from different locations, and potential keeps all written items on the project in synchorisation.
+Each research note is written in [Asciidoc](http://www.methods.co.nz/asciidoc/). The reason for using AsciiDoc formatting is to follow the process of write once, use everywhere mentality. AsciiDoc can be easily translated in to many different formats including HTML, LATEX, PDF, EPUB, man page. This process encourages authors to write content in distinct blocks which could then be re-used in documentation, articles, web pages, man pages at a later stage, without the need to constantly cut and paste text from different locations, and potentially keeps all written items on the project in synchorisation.
 
 ## WebRTC Research Document
 
 The root document within this set is in the folder webrtc-research-document. Within this folder there are the following files
 
 * README.md - Explaining the contents of the folder.
-* build.properties.sample - example build.properties file which points to what to build and how to build it via the asciidoc tool chain.iThis File has to be renamed to build.properties before things will work.
+* build.properties.sample - example build.properties file which points to what to build and how to build it via the openRMC projects [asciidoc tool chain](https://github.com/openRMC/asciidoc2html-pdf). This file has to be renamed to build.properties before things will work.
 * build.xml - ant build script.
 * src - where the document source files are located.
-** images - A directory to host any images related to the document.
-** <name-of-research-document>.asciidoc - Main source file which will be built by the document tool chain, as such our target.
-** resources - A directory to host .pdf, .doc, .odt or other formatted text documents which are used within the main target.
+  * images - A directory to host any images related to the document.
+  * <name-of-research-document>.asciidoc - Main source file which will be built by the document tool chain, as such our target.
+  * resources - A directory to host .pdf, .doc, .odt or other formatted text documents which are used within the main target.
 
 ### Build a PDF of the research document 
 
-In order to build a full pdf or html version of the webrtc-research-document, asciidoc along with the asciidoc toolchain program must be installed on your system. 
+In order to build a full pdf version of the webrtc-research-document, asciidoc along with the asciidoc toolchain program must be installed on your system. 
 
     $ ant pdf
-    $ snt html
 
 ## Deployed Document
 
