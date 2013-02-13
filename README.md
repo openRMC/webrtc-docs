@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 WebRTC is a free, open project that enables web browsers with Real-Time Communications (RTC) capabilities via simple Javascript APIs. The WebRTC components have been optimized to best serve this purpose. [WebRTC.org](webrtc.org)
 
 This WebRTC project will look at and deliver the following.
@@ -19,10 +18,3 @@ This WebRTC project will look at and deliver the following.
     * Real time text.
     * Full audio visual conferencing.
     * Availablity across all platforms and hardware.
-
-=======
-webrtc-docs
-===========
-
-WebRTC Documents
->>>>>>> 774f5d3ca32457300854df16aaabcb96ff7240e5
