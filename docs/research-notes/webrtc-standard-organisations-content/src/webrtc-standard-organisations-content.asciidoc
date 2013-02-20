@@ -11,8 +11,8 @@
 :legal:         LICENSE.txt
 :encoding:      iso-8859-1
 :toc:
-
-The organisations which are responsible for the WebRTC standards are IETF which is responsible for protocol and signalling and W3C which will look after the standards for APIs for all app developers.  
+ 
+include::webrtc-standard-organisations_introduction.asciidoc[]
 
 include::../../webrtc-w3c-content/src/webrtc-w3c-content.asciidoc[]
 
