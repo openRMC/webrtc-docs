@@ -14,7 +14,7 @@
 
 === The 3 key features of WebRTC ===
 
-* Media streams (getUser media): This is used to gain access to the users camera and microphone. It can also be used to design WebRTC applications.
+* Media streams (getUsermedia): This is used to gain access to the users camera and microphone. It can also be used to design WebRTC applications.
 
 * Peer connection: This is the engine required to make high quality audio visual calls on the web.
 
@@ -27,15 +27,7 @@ https://dvcs.w3.org/hg/audio/raw-file/tip/webaudio/webrtc-integration.html[Media
 
 === Media streams ===
 
-A media stream represents a media source, containing one or more synchronized media stream tracks.It can be converted to an object URL and passed to a <video> element. You use the getUser media API to get a media stream for the web cam and microphone. The user is then prompted to allow their consent, an example of this can be seen in Opera 12 where a text box drops down and requests permission from the user to allow use of their camera.
-
-Some examples of using the getUser media. The photo booth app allows you take a photograph of the video image and add different effects to it. This app is great fun for the consumer but commercially it can be used for a multitude of reasons. You could be looking to by a car, the callee can be showing you the car live using his smart phone and you can take snapshots of say the engine number or some damage that might require a quote to repair. This is only the tip of the iceberg.
-
-Another example is face recognition. We could do away with passwords for on-line banking, social media sites, on-line shopping or any interaction which requires a password to gain access to an account. These are only two examples of using getUser media, we can expect to see the number of these apps multiply daily.http://dev.w3.org/2011/webrtc/editor/getusermedia.html[Media capture and streams, W3C]
-
-image:images/mediastream.jpg["",width=530,height=400,scaledwidth="50%",scaledheight="50%"]
-
-Image source http://dev.w3.org/2011/webrtc/editor/getusermedia.html[W3C]
+include::./getUsermedia.asciidoc[]
 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 === Peer connection ===
