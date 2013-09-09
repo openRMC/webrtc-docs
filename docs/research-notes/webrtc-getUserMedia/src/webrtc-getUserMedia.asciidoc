@@ -1,0 +1,36 @@
+:reporttype:    Research Note openRMC-2013
+:reporttitle:   WebRTC What happens when there's missing media sources?
+:author:        John McLaughlin, Eamonn Power, Miguel Ponce de Leon
+:email:         jmclaughlin@tssg.org, epower@openrmc.org, miguelpdl@openrmc.org
+:group:         
+:address:       
+:revdate:       September 09, 2013
+:revnumber:     N/A
+:docdate:       September 12, 2013
+:description:   We wanted to know what should and would happen, from the perspective of a JavaScript app, if a browser makes a getUserMedia request on a system where either the camera, mic or both are inactive or missing.
+:legal:         LICENSE.txt
+:encoding:      iso-8859-1
+:toc:
+
+== WebRTC getUserMedia ==
+The getUsermedia API is one of the 3 key features of WebRTC, as it is used to gain access to the users camera and microphone.
+
+include::../../webrtc-key-features-content/src/getUsermedia.asciidoc[]
+
+== What happens when there's missing media source ==
+
+include::gum-report.asciidoc[]
+
+== Specifying a comprehensive diagnostics for WebRTC initialisation == 
+
+include::feature9930-background.asciidoc[]
+
+=== Implementation Strategy ===
+
+include::feature9930-implementation.asciidoc[]
+
+== Risks ==
+
+include::feature9930-risks.asciidoc[]
+
+include::bib.asciidoc[]

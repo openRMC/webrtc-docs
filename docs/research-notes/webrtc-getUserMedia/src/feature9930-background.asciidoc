@@ -1,0 +1,14 @@
++getUserMedia()+ as specified in <<gum>> is somewhat limited in the diagnostics
+that are given to the user in the event of an error occurring. In an 
+experiment <<gum-status>> we mapped the results of calling +getUserMedia()+ 
+requesting various combinations of media against the presence or otherwise
+of the relevant input devices.
+
+This is further complicated by the cross browser differences in the type
+and structure of errors returned (at the time of writing neither Chrome 
+nor Firefox conform to the W3C specification of +NavigatorUserMediaError+
+as laid out in <<gum>>. And that's even before considering browsers which
+don't support +getUserMedia()+ in the first place.
+
+The goal of this task is to provide better, uniform, diagnostics for the
+application developer, so they can better provide feedback to the user.

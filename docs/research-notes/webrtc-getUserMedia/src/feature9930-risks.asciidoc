@@ -1,0 +1,12 @@
+The primary risk at the time of writing is a combination of lack of 
+cross-browser consistency in terms of the native errors returned by calls to
++getUserMedia()+. As the spec is evolving, the browser implementations will 
+also evolve, and this required tracking.
+
+A further complications is lack of support for +getAudioTracks()+ and 
++getVideoTracks()+ is streams returned by +getUserMedia()+. Chrome supports
+these calls, and behaves as per the spec. Firefox however as of version 22
+does not. The are present and correct in Firefox 23 and behave similarly to
+Chrome, but in any earlier Firefox version, there is simply no way for 
+an application to access the media streams. This is considered a low risk
+as Firefox 23 is due to move to "RELEASE" status on 6/8/2013

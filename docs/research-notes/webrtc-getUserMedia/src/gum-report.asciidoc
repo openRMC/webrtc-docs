@@ -1,0 +1,86 @@
+:reporttype:    Research Note TSSG-2013
+:reporttitle:   WebRTC getUserMedia - What happens when there's missing media sources?
+:author:        Eamonn Power 
+:email:         epower@tssg.org
+:group:         Telecommunications Software and Systems Group (TSSG)
+:address:       Waterford Institute of Technology, West Campus, Carriganore, Waterford, Ireland
+:revdate:       May 17, 2013
+:revnumber:     Issue 4190
+:docdate:       May 17, 2013
+:description:   JavaScript, getUserMedia
+:legal:         (C) Waterford Institute of Technology
+:encoding:      iso-8859-1
+:toc:
+We wanted to know what should and would happen, from the perspective of a JavaScript app, if a browser makes a getUserMedia request on a system where either the camera, mic or both are inactive or missing. This question arose from functional testing with our EFM contact, Phelim. We set up a quick client-side only test to try it out on Chrome 26.0.1410.65. The HTML document is compiled Jade and a small bit of JavaScript.
+
+-----
+
+navigator.getMedia = ( navigator.getUserMedia ||
+                       navigator.webkitGetUserMedia ||
+                       navigator.mozGetUserMedia ||
+                       navigator.msGetUserMedia);
+
+
+function test(audioreq, videoreq){
+     navigator.getMedia (
+
+     // constraints
+     {
+        video: videoreq,
+        audio: audioreq
+     },
+
+     // successCallback
+     function(localMediaStream) {
+        var video = document.querySelector('video');
+        video.src = window.URL.createObjectURL(localMediaStream);
+        console.log('| Contraints: audioreq: ' + audioreq +
+                    ', videoreq: ' + videoreq +
+                    ' - Audio Tracks:' + localMediaStream.getAudioTracks().length +
+                    ', Video Tracks: ' + localMediaStream.getVideoTracks().length);
+      },
+
+     // errorCallback
+     function(err) {
+      console.log('Contraints: audioreq: ' + audioreq + 
+                  ', videoreq: ' + videoreq + ' - err:' + err.code);
+     }
+
+  );
+};
+
+// test(false, false); - not included as it errors out
+test(true, false);
+test(false, true);
+test(true, true);
+
+-----
+
+The source code for the JavaScript is based on an example provided by Mozilla with additional results rendering for our purposes.
+
+-----
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GUM demo</title>
+  </head>
+  <body>
+    <video></video>
+    <script src="gum.js"></script>
+  </body>
+</html>
+
+-----
+
+We wanted to see if an error appeared on the console (something we could handle in the page JS) and what addtional information we could infer the getUserMedia results to enhance user experience.
+
+Here are the results of obervations (where A indicates an available audio track and V indicates an available video track):
+
+[width="100%",options="header"]
+|=====
+|                         | None          | Mic Only      | Camera Only   | Camera and Mic
+|audio:false, video: false|NOT SUPPD ERROR|NOT SUPPD ERROR|NOT SUPPD ERROR|NOT SUPPD ERROR
+|audio:true,  video: false|PERMISS DENIED| A                | PERMISS DENIED| A
+|audio:false, video: true |PERMISS DENIED| PERMISS DENIED| V                | V
+|audio:true, video: true  |PERMISS DENIED| A                | V             | AV
+|=====
