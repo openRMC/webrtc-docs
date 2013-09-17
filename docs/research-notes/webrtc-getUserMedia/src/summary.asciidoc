@@ -1,3 +1,5 @@
+It's important to give the end user an informative message when things go wrong when initialising a WebRTC session and hopefully you can see that this approach along with the code snippets gives a developer the possiblity to derive a better picture of the WebRTC media capabilities of the host browser. 
+
 The results here should be taken as a snapshot reflecting the state of play
 for +getUserMedia()+ at the time of writing. As can be seen above, the API is
 still fluid, and could change several times before being set in stone. It is 
@@ -15,4 +17,3 @@ account the more complex forms of _mediaConstraints_ that can be passed to
 +getUserMedia()+. Adapting the code to take account of those should be quite 
 straightforward however, and for the purposes of example simpler is often 
 better.
-
