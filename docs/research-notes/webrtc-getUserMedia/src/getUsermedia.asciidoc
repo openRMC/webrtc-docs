@@ -1,0 +1,37 @@
+The http://dev.w3.org/2011/webrtc/editor/getusermedia.html#local-content[getUserMedia API]
+is used to access media streams from media input devices such as webcams 
+or microphones. The stream obtained can then either be used locally by passing it to 
+a HTML +<audio/>+ or +<video/>+ tag, lending itself to many creative and 
+fun applications such as photobooth, facial recognition, image processing
+etc. Additionally it can be attached to an RTCPeerConnection object and 
+used to establish communications with another user. Figure 1 shows possible
+usage scenarios.
+
+.Example scenario (source http://dev.w3.org/2011/webrtc/editor/getusermedia.html[W3C])
+image::images/media-model.png["",width=640]
+
+As an overview, +getUserMedia()+ is called with up to three parameters:
+
+* _mediaConstraints_ - this is an object specifying the type and optionally
+the quality of the media streams required. Full details can be found in the
+http://dev.w3.org/2011/webrtc/editor/getusermedia.html#idl-def-MediaStreamConstraints[getUserMedia API]
+but for the purposes of this post we'll concentrate on the boolean attributes
+_audio_, and _video_, which specify whether audio and/or video streams are
+required respectively.
+* _successCallback_ (optional) - this is called with the 
+http://dev.w3.org/2011/webrtc/editor/getusermedia.html#mediastream[MediaStream]. 
+This is illustrated in figure 2.
+object encapsulating  the media streams requested by the developer
+* _errorCallback_ (optional) - this is called with an 
+http://dev.w3.org/2011/webrtc/editor/getusermedia.html#navigatorusermediaerror-and-navigatorusermediaerrorcallback[error] 
+object, which should give an indication as to why the call failed
+
+.MediaStream object (source http://dev.w3.org/2011/webrtc/editor/getusermedia.html[W3C])
+image::images/mediastream.jpg["",width=500]
+
+Altough the callbacks are optional in the spec, in practice at the very
+least the _successCallback_ is required, as this is the only way to access
+the MediaStream object. As we shall see, providing the error callback is 
+also beneficial
+
+

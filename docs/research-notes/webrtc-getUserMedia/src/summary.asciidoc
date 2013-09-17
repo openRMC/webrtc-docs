@@ -1,0 +1,18 @@
+The results here should be taken as a snapshot reflecting the state of play
+for +getUserMedia()+ at the time of writing. As can be seen above, the API is
+still fluid, and could change several times before being set in stone. It is 
+also possible that Microsoft and Apple will come to the party and add support
+of some sort to Internet Explorer and Safari, which will change the picture 
+again.
+
+The snippets presented in the post should therefore be taken as what they are -
+an illustration. The code on https://github.com/openRMC?source=c[GitHub] and the 
+http://10.37.3.39/test/index.html[sample app] should be kept up to date though,
+and should therefore be taken as the reference.
+
+The code presented here is also reasonably simplified, as it doesn't take into 
+account the more complex forms of _mediaConstraints_ that can be passed to 
++getUserMedia()+. Adapting the code to take account of those should be quite 
+straightforward however, and for the purposes of example simpler is often 
+better.
+

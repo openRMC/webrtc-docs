@@ -1,0 +1,22 @@
+We have made a simple web application available where you can try it for out 
+yourself at http://10.37.3.39/test/index.html. To try it, go to the page and 
+click the +"Call getUserMedia"+ button. Try various combinations with the 
+webcam and/or mic disabled. An error or stream status will be reported when 
+the call returns.
+
+The source can also be viewed and downloaded from 
+https://github.com/openRMC?source=c. It does need to be served by a web server
+of some sort - simply accessing the page by a file:// URL won't work
+
+===============================
+NOTE: While on most modern OSes it's usually quite straightforward to disable a 
+webcam if it's not built in (just unplug it), it can be quite tricky to 
+disable audio input. Typically some sort of virtual driver which will quite 
+happily allow getUserMedia() to return successfully with no supporting  
+hardware. Proper disabling can thus require a dance of device driver disabling 
+and possible reboots (stand up Windows). If you're going down this path to test, 
+make sure you know how to re-enable said drivers again!
+===============================
+
+
+
