@@ -9,7 +9,7 @@ https://github.com/openRMC?source=c. It does need to be served by a web server
 of some sort - simply accessing the page by a file:// URL won't work
 
 ===============================
-NOTE: While on most modern OSes it's usually quite straightforward to disable a 
+NOTE: While on most modern OS's it's usually quite straightforward to disable a 
 webcam if it's not built in (just unplug it), it can be quite tricky to 
 disable audio input. Typically some sort of virtual driver which will quite 
 happily allow getUserMedia() to return successfully with no supporting  
