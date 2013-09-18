@@ -8,8 +8,8 @@ of some sort to Internet Explorer and Safari, which will change the picture
 again.
 
 The snippets presented in the post should therefore be taken as what they are -
-an illustration. The code on https://github.com/openRMC?source=c[GitHub] and the 
-http://10.37.3.39/test/index.html[sample app] should be kept up to date though,
+an illustration. The code on https://github.com/openRMC/webrtc-context[GitHub WebRTC Context] and the 
+http://www.openrmc.org/files/webrtc/context/index.html[sample app] should be kept up to date though,
 and should therefore be taken as the reference.
 
 The code presented here is also reasonably simplified, as it doesn't take into 
