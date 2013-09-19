@@ -59,7 +59,7 @@ err: {
 
 To be fair to Chrome, the samples above _do_ conform to
 the earlier specs, and would reflect what was current when that version of Chrome 
-was in its Canary incarnation.
+was in its Canary incarnation. In order to keep up to date on such changes it's worth subscribing to the https://groups.google.com/forum/#!forum/discuss-webrtc[Discuss-WebRTC mailing list] as posts like this give you https://groups.google.com/forum/#!searchin/discuss-webrtc/API$20change/discuss-webrtc/EH-wGQFjWDE/hnPK8zrgtUcJ[a heads up on API changes].  
 
 .Firefox 22 error
 ----
