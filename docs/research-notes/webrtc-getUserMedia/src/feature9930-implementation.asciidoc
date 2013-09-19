@@ -1,0 +1,93 @@
+Depsite the lack of granularity in the error responses returned by 
++getUserMedia()+, with a little forensic work it is possible to derive a
+better picture of the WebRTC media capabilities of the host browser.
+
+In the first instance, support of any kind for +getUserMedia()+ is tested
+and if not present, an error is raised.
+
+Where +getUserMedia()+ is supported, a method can then be used to check
+whether or not multimedia input devices are available to the application. 
+Key to this is accessing the MediaStream API methods +getAudioTracks()+ and 
++getVideoTracks()+, both returning arrays,  on the stream passed into the 
++success+ callback supplied to +getUserMedia()+.
+
+The required contraints parameter for +getUserMedia()+ has two boolean 
+attributes +audio+ and +video+ allowing the developer to request access to 
+audio and video input respectively.
+
+If audio is requested, and +getAudioTracks()+ has a length of 0 then it can
+be inferred that no microphone is available. It may be physically not present
+or blocked by another process, but in any case it is not available to the 
+requesting application. The same applies to video and +getVideoTracks()+.
+
+In the case of the entire call to +getUserMedia()+ failing for some reason, 
+the +failure+ callback is called with an error. 
+
+=== Errors ===
+
+The +getUserMedia()+ errors that can be raised by openRMC are laid out below.
+There are two contexts in which errors are raised, both outlined in the 
+following sections, which raise a different subset of errors.
+
+* *+NOT_SUPPORTED+* - WebRTC is not supported on the host browser
+* *+PERMISSION_DENIED+* - Access to multimedia input devices is denied
+* *+CONSTRAINT_NOT_SATISFIED+* - A mandatory constraint was requested, and
+could not be satisfied
+* *+CONSTRAINTS_REQUIRED+* - At least one of audio or video must be requested
+* *+AUDIO_NOT_AVAILABLE+* - Raised when audio is requested, but no audio
+input is available
+* *+VIDEO_NOT_AVAILABLE+* - Raised when video is requested, but no video
+input is available
+* *+AV_NOT_AVAILABLE+* - Raised when both audio and video are requested,
+but neither audio nor video inputs are available
+
+
+=== Error Checking Scenarios ===
+
+In the openRMC scenario, there are two instances where errors are returned, 
+the exact subset of errors depending on the calling context:
+
+==== +openrmc.webrtc.api.init()+ ==== 
+
++getUserMedia()+ is called with optional audio/video media constraints as 
+part of the WebRTC API initialisation. The capabilities available to the
+app are then tested, and a context created.
+
+The +failure(errCxt)+ callback is called with a context +errCxt+ with an
++error+ attribute corresponding to one of the openRMC media errors outlined
+above. The possible error returned are +NOT_SUPPORTED+, +PERMISSION_DENIED+,
+and +CONSTRAINTS_REQUIRED+
+
+==== +openrmc.webrtc.api.getUserMedia() ====
+
++openrmc.webrtc.api.getUserMedia()+ wraps the native +getUserMedia()+ and 
+provides the enhanced diagnostics described in this document. 
+The +failure(errCxt)+ callback is called with a context +errCxt+ with an
++error+ attribute corresponding to one of the openRMC media errors outlined
+above. This can contain any of the error conditions described above.
+
+
+=== Application Checking Of Capabilities ===
+
+The WebRTC API must be properly initialised by calling 
++openrmc.webrtc.api.init()+. This created a WebRTC context awhich can be 
+queried for capabilities. This is available as an attribute +baseContext+
+
++baseContext+ (and indeed any context passed to the +success(cxt)+ callback)
+has a methods to check availablity of a particular resource:
+
+* +isrtcavailable()+ - +true+ if WebRTC is available, +false+ otherwise
+* +isrtcaudioavailable()+ - Returns +true+ if an audio input is available, 
+otherwise +false+
+* +isrtcvideoavailable()+ - Returns +true+ if a video input is available, 
+otherwise +false+
+
+With respect to +baseContext+, these methods are are all wrapped in 
+convenience methods with the same signature in +openrmc.webrtc.api+
+
+It is the application's responsibility to query +baseContext+ for host
+browser capabilities following a call to +openrmc.webrtc.api.init()+.
+Should a subsequent call to +openrmc.webrtc.api.getUserMedia()+ be
+made requesting a resource or resources not detected on init, one of the 
++XXX_NOT_AVAILABLE+ errors will be raised.
+

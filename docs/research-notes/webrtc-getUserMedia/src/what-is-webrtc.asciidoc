@@ -1,0 +1,26 @@
+https://sites.google.com/site/webrtc/[WebRTC] is an open framework to 
+enable real time communications via the web. The primary usage scenario 
+would browser based, where a Javascript API allows developers to 
+implement their own RTC enabled webapp. Alternatively, various toolkits exist to
+facilitate native app development.
+
+Standardisation is an ongoing process through the W3C 
+http://www.w3.org/2011/04/webrtc/[WebRTC working group] at the API level
+and the IETF http://tools.ietf.org/wg/rtcweb/[RTCWeb working group] at the 
+protocol level.
+
+As a very high-level overview, there are three main API components in the WebRTC 
+framework:
+
+* *getUserMedia* - provides access to media input devices such as webcams
+and microphones
+* *RTCPeerConnection* - establishes a peer-to-peer media session between two 
+endpoints, including any relaying necessary, allowing two users to 
+communicate directly
+* *RTCDataConnection* - closely related to and dependent upon 
+RTCPeerConnection, RTCDataChannel allows a web application to send and 
+receive generic application data peer to peer
+
+In this post we'll be looking more closely at the getUserMedia() API, and 
+how to deal with its outputs in order to give some meaningful feedback to the 
+developer, and ultimatly the end user.

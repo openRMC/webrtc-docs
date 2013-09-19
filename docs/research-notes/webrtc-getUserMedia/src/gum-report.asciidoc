@@ -1,0 +1,77 @@
+So what happens if you call +getUserMedia()+ and ask for a media stream but 
+there's no device present to support it? Shouldn't the error callback get
+called with a nice informative error telling you what happened so you can
+pass it on to the end user? Well, yes to the first part, but the informative
+bit leaves a lot to be desired.
+
+From the official perspective, at the time of writing, this is what the 
+http://dev.w3.org/2011/webrtc/editor/getusermedia.html#idl-def-NavigatorUserMediaError[spec] 
+says should be passed into the error callback:
+
+----
+[NoInterfaceObject]
+interface NavigatorUserMediaError : DOMError {
+    readonly    attribute DOMString? constraintName;
+};
+----
+
+This is subject to constant change, as can be seen by prior versions of the 
+spec (+getUserMedia+ is generally considered the most stable of the APIs!):
+
+.http://dev.w3.org/2011/webrtc/editor/archives/20130704/getusermedia.html#navigatorusermediaerror-and-navigatorusermediaerrorcallback[NavigatorUserMediaError 07/04/2013]
+----
+[NoInterfaceObject]
+interface NavigatorUserMediaError {
+    readonly    attribute DOMString  name;
+    readonly    attribute DOMString? message;
+    readonly    attribute DOMString? constraintName;
+};
+----
+
+.http://dev.w3.org/2011/webrtc/editor/archives/20121212/getusermedia.html#navigatorusermediaerror-and-navigatorusermediaerrorcallback[NavigatorUserMediaError 12/12/2012]
+----
+[NoInterfaceObject]
+interface NavigatorUserMediaError {
+    const unsigned short PERMISSION_DENIED = 1;
+    readonly attribute unsigned short code;
+};
+----
+
+So let's look at what actually happens in various browsers when we remove or disable
+the audio and video input devices. 
+
+.Chrome 28 error
+----
+err: {
+	code: 1,
+	PERMISSION_DENIED: 1
+}
+----
+
+.Chrome 29 error
+----
+err: {
+	constraintName: "",
+	message: "",
+	name: "PERMISSION_DENIED"
+}
+----
+
+To be fair to Chrome, the samples above _do_ conform to
+the earlier specs, and would reflect what was current when that version of Chrome 
+was in its Canary incarnation. In order to keep up to date on such changes it's worth subscribing to the https://groups.google.com/forum/#!forum/discuss-webrtc[Discuss-WebRTC mailing list] as posts like this give you https://groups.google.com/forum/#!searchin/discuss-webrtc/API$20change/discuss-webrtc/EH-wGQFjWDE/hnPK8zrgtUcJ[a heads up on API changes].  
+
+.Firefox 22 error
+----
+err: "HARDWARE_UNAVAILABLE"
+----
+
+.Firefox 23 error
+----
+err: "NO_DEVICES_FOUND"
+----
+
+Informative in a sense, though what device(s) weren't found? Nor does it bear 
+the slightest resemblance to any version of the spec.
+
+

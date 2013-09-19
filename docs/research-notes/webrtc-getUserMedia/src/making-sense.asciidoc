@@ -1,0 +1,164 @@
+Fortunately depsite the lack of granularity in the error responses returned 
+by +getUserMedia()+, with a little forensic work it is possible to derive a
+better picture of the WebRTC media capabilities of the host browser.
+
+We make use of the https://code.google.com/p/webrtc/source/browse/trunk/samples/js/base/adapter.js[adapter.js] 
+shim from the Google WebRTC reference app. We have made a modification to 
+this as the latest version at the time of writing, 
+https://code.google.com/p/webrtc/source/detail?spec=svn4751&r=4259[r4259], 
+didn't have Firefox support for the +getAudioTracks()+ and 
++getVideoTracks()+ http://www.w3.org/TR/mediacapture-streams/#methods[methods of MediaStream] 
+(Firefox has only gained support for these methods as of version 23)
+
+We have wrapped the native +getUserMedia()+ call in an API 
++openrmc.webrtc.api.getUserMedia(spec)+ where _spec_ has the following 
+attributes:
+
+----
+{
+    audio : true|false, // Default true
+    video : true|false, // Default false
+    success : function(cxt) {}, // Success callback
+    failure : function(cxt) {} // Failure callback
+}
+----
+
+The _success_ and _failure_ callbacks both take a parameter of type 
++openrmc.webrtc.Context+, of which more later.
+
+Firstly what sort of errors are we interested in? Since we primarily want 
+to establish the lack of presence of some media device, we came up with the
+following error set:
+
+.Error codes
+----
+openrmc.webrtc.Errors = {
+    NOT_SUPPORTED : 'NOT_SUPPORTED',
+    CONSTRAINTS_REQUIRED : 'CONSTRAINTS_REQUIRED',
+    AUDIO_NOT_AVAILABLE : 'AUDIO_NOT_AVAILABLE',
+    VIDEO_NOT_AVAILABLE : 'VIDEO_NOT_AVAILABLE',
+    AV_NOT_AVAILABLE : 'AV_NOT_AVAILABLE'
+} ;
+----
+
+The first two are straightforward. +NOT_SUPPORTED+ is raised when +getUserMedia()+
+is called on a browser that doesn't support WebRTC. +CONSTRAINTS_REQUIRED+
+will be raised if +getUserMedia()+ would be called with both _audio_, and _video_
+attributes set to false. This would result in an error anyway, and isn't 
+allowed.
+
+----
+if(webrtcDetectedBrowser===null) {
+    console.log("[RTCInit] : Browser does not appear to be WebRTC-capable");
+    var cxt=openrmc.webrtc.Context({
+        error : openrmc.webrtc.Errors.NOT_SUPPORTED
+    });
+    spec.failure && spec.failure(cxt) ;
+    return ;
+}
+:
+:
+if(!(spec.audio || spec.video)) {
+    spec.failure && spec.failure(openrmc.webrtc.Context({
+        error : openrmc.webrtc.Errors.CONSTRAINTS_REQUIRED
+    })) ;
+    return ;
+}
+
+----
+
++AUDIO_NOT_AVAILABLE+, +VIDEO_NOT_AVAILABLE+, and +AV_NOT_AVAILABLE+ are
+fairly self-explanatory and are raised if any stream of a certain type has
+been requested, but isn't available. Which one is determined by checking 
+the returned error and what resources are requested. A +getError()+ helper 
+method is defined based on the detected browser.
+
+----
+if(webrtcDetectedBrowser==='chrome') {
+    ns.getError= function(err, spec) {
+        // Take account of varying forms of this error across Chrome versions
+        if(err.name==='PERMISSION_DENIED' || err.PERMISSION_DENIED===1 || err.code===1) {
+            if(spec.audio && spec.video) {
+                return openrmc.webrtc.Errors.AV_NOT_AVAILABLE ;
+            }
+            else {
+                if(spec.audio && !spec.video) {
+                    return openrmc.webrtc.Errors.AUDIO_NOT_AVAILABLE ;
+                }
+                else {
+                    return openrmc.webrtc.Errors.VIDEO_NOT_AVAILABLE ;
+                }
+            }
+        }
+    } ; 
+}
+else if(webrtcDetectedBrowser==='firefox') {
+    ns.getError = function(err, spec) {
+        if(err==='NO_DEVICES_FOUND' || err==='HARDWARE_UNAVAILABLE') {
+            if(spec.audio && spec.video) {
+                return openrmc.webrtc.Errors.AV_NOT_AVAILABLE ;
+            }
+            else {
+                if(spec.audio && !spec.video) {
+                    return openrmc.webrtc.Errors.AUDIO_NOT_AVAILABLE ;
+                }
+                else {
+                    return openrmc.webrtc.Errors.VIDEO_NOT_AVAILABLE ;
+                }
+            }
+        }
+    } ;
+}
+else {
+    ns.getError = function() {
+        console.log('No error handler set for '  + webrtcDetectedBrowser) ;
+        return openrmc.webrtc.Errors.NOT_SUPPORTED ;
+    } ;
+}
+----
+
+These are hard errors and are raised as a result of the native +getUserMedia()+
+failing, i.e. none of the requested media constraints could be satisfied. The
+native +getUserMedia()+ will succeed if say audio and video are requested, but
+only audio is available. In this case, the returned +openrmc.webrtc.Context+ 
+can give more information to the application developer which can be used to 
+inform the end user.
+
+The +openrmc.webrtc.Context+ object provides the following methods:
+
+* _isrtcavailable()_ - Returns +true+ if the native +getUserMedia()+ call 
+resulted in a valid MediaStream, +false+ otherwise.
+* _isrtcaudioavailable()_ - Returns +true+ if at least one audio track is 
+available, +false+ otherwise.
+* _isrtcvideoavailable()_ - Returns +true+ if at least one video track is 
+available, +false+ otherwise.
+* _getError()_- Returns an error, if any
+
+The presence of audio and video tracks is determined by the +getAudioTracks()+
+and +getVideoTracks()+ methods on +MediaStream+ - in both cases +true+ is 
+returned if and only if the +MediaStream+ object is present, and the relevant 
++getXXXTracks()+ method returns an array with one or more entries.
+
+----
+that.isrtcavailable = function(){
+    return spec.localStream !== undefined ;
+} ;
+
+var aavail = (spec.localStream && 
+        spec.localStream.getAudioTracks() &&
+        spec.localStream.getAudioTracks().length>0) || false ;
+
+that.isrtcaudioavailable = function() {
+    return aavail ;
+} ;
+
+var vavail = (spec.localStream && 
+        spec.localStream.getVideoTracks() &&
+        spec.localStream.getVideoTracks().length>0) || false ;
+
+that.isrtcvideoavailable = function() {
+    return vavail ;
+} ; 
+
+----
+
